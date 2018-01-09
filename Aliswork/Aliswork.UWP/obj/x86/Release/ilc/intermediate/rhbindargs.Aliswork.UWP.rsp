@@ -1,0 +1,16 @@
+/osver:6.2
+/appcontainer
+/runtime:mrt100_app
+/eh:clr
+/pdb
+"/nativeLink:C:\Users\trinh\.nuget\packages\microsoft.net.native.compiler\1.7.3\tools\x86\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\intermediate\MDIL\Aliswork.UWP.mdilexe"
+"/i:E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\intermediate\MDIL"
+"/out:E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\intermediate\Native\Aliswork.UWP.exe"
+"/pdbAltPath:E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Release\ilc"
+"/res:E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\intermediate\Native.res"
+"/i:C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x86\1.7.0\tools\SharedLibrary\ret\MDIL"
+/shimexe
+"/classlib:SharedLibrary"

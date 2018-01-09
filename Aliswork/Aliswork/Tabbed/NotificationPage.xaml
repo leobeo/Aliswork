@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Tabbed.NotificationPage"
+             Title="Thông báo">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <!--<StackLayout x:Name="stkHeader" Orientation="Horizontal" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="20" WidthRequest="30" Margin="10,10,0,10"/>
+                <Label Text="THÔNG BÁO" HorizontalOptions="CenterAndExpand" Margin="-40,0,0,0" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" TextColor="White"/>
+                <Image x:Name="imgtoNotification" Source="bell.png" HeightRequest="20" WidthRequest="30" Margin="10,10,0,10"/>
+            </StackLayout>-->
+
+            <StackLayout VerticalOptions="Start">
+                <Grid RowSpacing="1" ColumnSpacing="1" HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView x:Name="bvPrivate" BackgroundColor="#157EFB" Grid.Column="0" Grid.Row="0"/>
+                    <Label x:Name="lbPrivate" Text="Cá nhân" TextColor="White" FontSize="18" Grid.Column="0" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="5,5"/>
+
+                    <BoxView x:Name="bvPublic" BackgroundColor="White" Grid.Column="1" Grid.Row="0"/>
+                    <Label x:Name="lbPublic" Text="Công ty" TextColor="#157EFB" FontSize="18" Grid.Column="1" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="5,5"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Margin="10,0,10,0" VerticalOptions="Start">
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" Margin="0,10,0,0" Padding="5,5">
+                    <Label Text="Chọn tháng   " TextColor="#676f7a" FontAttributes="Bold" FontSize="16" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
+                    <StackLayout Margin="0,0,10,0" Orientation="Horizontal">
+                        <Picker x:Name="pickerMonth" Title="Chọn tháng   " HorizontalOptions="EndAndExpand"/>
+                        <Image x:Name="imgMonth" Source="arrow.png" Rotation="90" WidthRequest="15" HorizontalOptions="End" VerticalOptions="Center" Margin="-30,0,0,0"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <ScrollView VerticalOptions="FillAndExpand" >
+                    <StackLayout>
+                        <ListView x:Name="lvNotifications" RowHeight="75" IsPullToRefreshEnabled="true" Refreshing="OnRefresh" ItemSelected="OnSelection" BackgroundColor="White">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <ViewCell.View>
+                                            <StackLayout VerticalOptions="FillAndExpand" Margin="10,10" Spacing="1">
+                                                <Label  Text="{Binding Day}" HorizontalOptions="StartAndExpand" FontSize = "12"/>
+                                                <Label  Text="{Binding Title}" HorizontalOptions="StartAndExpand" FontAttributes="{Binding Attribute}" FontSize="14"/>
+                                                <Label  Text="{Binding Content}" HorizontalOptions="StartAndExpand" FontSize = "14" LineBreakMode="NoWrap"/>
+                                            </StackLayout>
+                                        </ViewCell.View>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

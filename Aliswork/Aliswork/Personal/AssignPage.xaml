@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Personal.AssignPage"
+             Title="Phân công">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="FillAndExpand">
+                <!--<Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="1"/>
+                </Grid.RowDefinitions>-->
+
+                <BoxView x:Name="bvMyturn" BackgroundColor="#157EFB" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="Myturn" Text="CA LÀM VIỆC CỦA TÔI" TextColor="White" Grid.Row="0" Grid.Column="0" FontSize="16"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+
+                <BoxView x:Name="bvAllturn" BackgroundColor="White" Grid.Row="0" Grid.Column="1"/>
+                <Label x:Name="Allturn" Text="TẤT CẢ CA LÀM VIỆC" TextColor="#157EFB" Grid.Row="0" Grid.Column="1" FontSize="16"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </Grid>
+            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+            <ScrollView>
+                <StackLayout Margin="10,0">
+                    <ListView x:Name="lvShift" RowHeight="50" ItemSelected="OnSelection" BackgroundColor="White">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <StackLayout VerticalOptions="FillAndExpand" Margin="10,10" Spacing="1">
+                                            <Label  Text="{Binding NameShift}" HorizontalOptions="StartAndExpand" FontAttributes="Bold" FontSize = "16"/>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label  Text="{Binding TimeStart}" HorizontalOptions="Start"  FontSize="16"/>
+                                                <Label Text="{Binding TimeEnd}" HorizontalOptions="Start" FontSize="16"/>
+                                                <Label Text="{Binding TimeCount}" HorizontalOptions="StartAndExpand" FontSize="16"/>
+                                            </StackLayout>
+
+                                        </StackLayout>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

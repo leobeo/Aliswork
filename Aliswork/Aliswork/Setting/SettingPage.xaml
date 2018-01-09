@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Setting.SettingPage"
+             Title="Cài đặt">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10,10,10,0" VerticalOptions="StartAndExpand">
+                <Label Text="NHẮC NHỞ" FontAttributes="Bold" FontSize="16" TextColor="#676f7a"/>
+                <StackLayout BackgroundColor="White">
+
+                    <StackLayout Orientation="Horizontal" Padding="5,5">
+                        <Image Source="checkin.png" WidthRequest="40" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <StackLayout HorizontalOptions="StartAndExpand">
+                            <Label Text="Checkin" TextColor="#676f7a" FontSize="14" FontAttributes="Bold"/>
+                            <Label x:Name="CheckinAlertBy" Text="Qua điện thoại" TextColor="#676f7a" FontSize="14"/>
+                        </StackLayout>
+
+                        <Label x:Name="CheckinAlertAt" Text="07:50 AM" TextColor="#676f7a" FontSize="16" VerticalOptions="Center" HorizontalOptions="End"/>
+                        <Image x:Name="imgSetCheckin" Source="arrow.png" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="End"/>
+                    </StackLayout>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+
+                    <StackLayout Orientation="Horizontal" Padding="5,5">
+                        <Image Source="checkout.png" WidthRequest="40" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <StackLayout HorizontalOptions="StartAndExpand">
+                            <Label Text="Checkout" TextColor="#676f7a" FontSize="14" FontAttributes="Bold"/>
+                            <Label x:Name="CheckoutAlertBy" Text="Qua điện thoại" TextColor="#676f7a" FontSize="14"/>
+                        </StackLayout>
+
+                        <Label x:Name="CheckoutAlertAt" Text="06:00 PM" TextColor="#676f7a" FontSize="16" VerticalOptions="Center" HorizontalOptions="End"/>
+                        <Image x:Name="imgSetCheckout" Source="arrow.png" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="End"/>
+                    </StackLayout>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+                    <!--#region Vào các ngày-->
+
+                    <StackLayout Orientation="Horizontal" Padding="5,5">
+                        <Image Source="vaocacngay.png" WidthRequest="40" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <StackLayout HorizontalOptions="StartAndExpand">
+                            <Label Text="Vào các ngày" TextColor="#676f7a" FontSize="14" FontAttributes="Bold"/>
+                            <Label x:Name="DayAlert" Text="Hai, Ba, Tư, Năm, Sáu" TextColor="#676f7a" FontSize="14"/>
+                        </StackLayout>
+
+                        <Image x:Name="imgDayAlert" Source="arrow.png" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="End"/>
+                    </StackLayout>
+                    <!--#endregion-->
+                </StackLayout>
+
+                <Label Text="LỊCH LÀM VIỆC" TextColor="#676f7a" FontAttributes="Bold" FontSize="16"/>
+                <StackLayout>
+                    <StackLayout BackgroundColor="White">
+                        <!--#region Khi Khi có thay đổi hoặc điều động ca làm việc-->
+                        <StackLayout Orientation="Horizontal" Padding="10,10">
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="Khi có thay đổi hoặc điều động ca làm việc" TextColor="#676f7a" FontSize="14" FontAttributes="Bold"/>
+                                <Label x:Name="ChangeplanAlertBy" Text="Qua điện thoại" TextColor="#676f7a" FontSize="14"/>
+                            </StackLayout>
+
+                            <Image x:Name="imgSetChangeplanAlert" Source="arrow.png" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </StackLayout>
+                        <!--#endregion-->
+                        <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+                        <!--#region 1 giờ trước khi ca làm việc bắt đầu-->
+                        <StackLayout Orientation="Horizontal" Padding="10,10">
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="1 giờ trước khi ca làm việc bắt đầu" TextColor="#676f7a" FontSize="14" FontAttributes="Bold"/>
+                                <Label x:Name="Befor1HourAlertBy" Text="Qua điện thoại" TextColor="#676f7a" FontSize="14"/>
+                            </StackLayout>
+
+                            <Image x:Name="imgSetBefor1Hour" Source="arrow.png" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </StackLayout>
+                        <!--#endregion-->
+                        <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+
+                        <!--#region Quên checkin-->
+                        <StackLayout Orientation="Horizontal" Padding="10,10">
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="Quên Checkin" TextColor="#676f7a" FontSize="14" FontAttributes="Bold"/>
+                                <Label x:Name="ForgetCheckin" Text="Qua điện thoại" TextColor="#676f7a" FontSize="14"/>
+                            </StackLayout>
+
+                            <Image x:Name="imgSetForgetCheckin" Source="arrow.png" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </StackLayout>
+                        <!--#endregion-->
+                        <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+
+                        <!--#region Quên checkout-->
+                        <StackLayout Orientation="Horizontal" Padding="10,10">
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="Quên Checkout" TextColor="#676f7a" FontSize="14" FontAttributes="Bold"/>
+                                <Label x:Name="ForgetCheckout" Text="Qua điện thoại" TextColor="#676f7a" FontSize="14"/>
+                            </StackLayout>
+
+                            <Image x:Name="imgSetForgetCheckout" Source="arrow.png" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </StackLayout>
+                        <!--#endregion-->
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

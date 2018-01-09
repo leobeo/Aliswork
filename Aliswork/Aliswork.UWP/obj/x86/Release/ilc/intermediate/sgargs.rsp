@@ -1,0 +1,12 @@
+/out:"E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\intermediate\SgGenerated\\"
+/int:"E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\intermediate\\"
+/ref:"E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\intermediate\TransformedSRWR"
+/ref:"E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\in"
+/ref:"E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\in\\"
+/ref:"E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\in\\"
+/ref:"C:\Users\trinh\.nuget\packages\microsoft.net.native.compiler\1.7.3\tools\x86\ilc\lib\Private\\"
+/ref:"E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\in\WinMetadata"
+/ca:System.Private.CoreLib
+/cscpath:"C:\Users\trinh\.nuget\packages\microsoft.net.native.compiler\1.7.3\tools\x86\ilc\csc"
+"@E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\ComputedSerializationInput.txt"

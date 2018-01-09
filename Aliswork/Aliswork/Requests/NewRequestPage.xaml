@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:Aliswork.Timekeeping;assembly=Aliswork"
+             x:Class="Aliswork.Requests.NewRequestPage"
+             Title="Soạn đơn từ">
+    <ContentPage.Content>
+        <StackLayout  Margin="10,10,10,0" VerticalOptions="StartAndExpand">
+            <StackLayout BackgroundColor="White" VerticalOptions="Start">
+                <StackLayout Orientation="Horizontal" Padding="5,5">
+                    <Label Text="Ngày phép đã nghỉ: " FontSize="16" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="Start"/>
+                    <Label x:Name="lbDateoff" Text="00" FontSize="16" FontAttributes="Bold" TextColor="#61bafe" HorizontalOptions="StartAndExpand"/>
+                    <Label x:Name="lbTotalDateoff" Text="(Tiêu chuẩn: 0 ngày)" FontSize="12" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="End" VerticalOptions="Center"/>
+                </StackLayout>
+
+                <BoxView HeightRequest="1" BackgroundColor="#A9A9A9"/>
+
+                <StackLayout Orientation="Horizontal"  Padding="5,5">
+                    <Label Text="Nghỉ phép" FontSize="14" TextColor="#676f7a" HorizontalOptions="Start"/>
+                    <control:CustomProgressBar x:Name="progessPer" Progress="0" HeightRequest="10" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                    <Label x:Name="lboffPertotal" Text="0" FontSize="16" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="End"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="StartAndExpand">
+                <ScrollView>
+                    <StackLayout BackgroundColor="White">
+
+                        <Label Grid.Column="0" FontAttributes="Bold" TextColor="#676f7a" Grid.Row="0" FontSize="14">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Loại đơn từ "/>
+                                    <Span Text="*" ForegroundColor="Red" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Grid Margin="15,15,15,15" RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="1"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+                            </Grid.RowDefinitions>
+
+                            <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"/>
+                            <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"/>
+
+                            <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"/>
+                            <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="2" Grid.Row="0" Grid.RowSpan="3"/>
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Margin="10,0,30,0">
+                                <Picker x:Name="pkTypeRequest" TextColor="#676f7a" Title ="Chọn" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"/>
+                                <Image x:Name="imgMonth" Source="arrow.png" Rotation="90" HorizontalOptions="End" WidthRequest="10" VerticalOptions="Center" Margin="-40,0,0,0"/>
+                            </StackLayout>
+                        </Grid>
+
+                        <Label Grid.Column="0" FontAttributes="Bold" TextColor="#676f7a" Grid.Row="0" FontSize="14">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Chi tiết loại đơn từ "/>
+                                    <Span Text="*" ForegroundColor="Red" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Grid Margin="15,15,15,15" RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="1"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+                            </Grid.RowDefinitions>
+
+                            <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"/>
+                            <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"/>
+
+                            <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"/>
+                            <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="2" Grid.Row="0" Grid.RowSpan="3"/>
+
+                            <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Margin="10,0,30,0">
+                                <Picker x:Name="pkSubTypeRequest" TextColor="#676f7a" Title ="Chọn" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" IsEnabled="False"/>
+                                <Image Source="arrow.png" Rotation="90" HorizontalOptions="End" WidthRequest="10" VerticalOptions="Center" Margin="-40,0,0,0"/>
+                            </StackLayout>
+                        </Grid>
+
+
+                        <!--<Label Text="Phiếu số" Grid.Column="0" FontAttributes="Bold" TextColor="#676f7a" Grid.Row="0" FontSize="14"/>
+
+                        <Grid Margin="15,15,15,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="1"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+                            </Grid.RowDefinitions>
+
+                            <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"/>
+                            <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"/>
+
+                            <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"/>
+                            <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="2" Grid.Row="0" Grid.RowSpan="3"/>
+
+                            <Label x:Name="lbNumberId" Text="LR0001" FontSize="14" TextColor="#676f7a" Grid.Column="1" Grid.Row="1" Margin="10,0,30,0"/>
+                        </Grid>-->
+
+                        <StackLayout x:Name="stkFromDate">
+                            <Label x:Name="lbTextFromDate" Grid.Column="0" FontAttributes="Bold" TextColor="#676f7a" Grid.Row="0" FontSize="14">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Thời gian từ "/>
+                                        <Span Text="*" ForegroundColor="Red" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <Grid Margin="15,15,15,15" RowSpacing="0"  ColumnSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1"/>
+                                    <ColumnDefinition Width="50*"/>
+                                    <ColumnDefinition Width="1"/>
+                                    <ColumnDefinition Width="50*"/>
+                                    <ColumnDefinition Width="1"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="1"/>
+                                </Grid.RowDefinitions>
+
+                                <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5"/>
+                                <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5"/>
+
+                                <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"/>
+                                <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="2" Grid.Row="0" Grid.RowSpan="3"/>
+                                <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="4" Grid.Row="0" Grid.RowSpan="3"/>
+
+                                <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Margin="10,0,10,0">
+                                    <DatePicker x:Name="pkFromDate" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"/>
+                                    <Image Source="calendar.png" HorizontalOptions="End" WidthRequest="15" VerticalOptions="Center" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Grid.Column="3" Grid.Row="1" Margin="10,0,10,0">
+                                    <TimePicker x:Name="pkFromTime" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"/>
+                                    <Image Source="clock_outline.png" HorizontalOptions="End" WidthRequest="15" VerticalOptions="Center"/>
+                                </StackLayout>
+
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout x:Name="stkToDate">
+
+                            <Label Text="Đến *" Grid.Column="0" FontAttributes="Bold" TextColor="#676f7a" Grid.Row="0" FontSize="14">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Đến "/>
+                                        <Span Text="*" ForegroundColor="Red" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <Grid Margin="15,15,15,15" RowSpacing="0" ColumnSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1"/>
+                                    <ColumnDefinition Width="50*"/>
+                                    <ColumnDefinition Width="1"/>
+                                    <ColumnDefinition Width="50*"/>
+                                    <ColumnDefinition Width="1"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="1"/>
+                                </Grid.RowDefinitions>
+
+                                <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5"/>
+                                <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5"/>
+
+                                <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"/>
+                                <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="2" Grid.Row="0" Grid.RowSpan="3"/>
+                                <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="4" Grid.Row="0" Grid.RowSpan="3"/>
+
+                                <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Margin="10,0,10,0">
+                                    <DatePicker x:Name="pkToDate" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"/>
+                                    <Image Source="calendar.png" HorizontalOptions="End" WidthRequest="15" VerticalOptions="Center"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Grid.Column="3" Grid.Row="1" Margin="10,0,10,0">
+                                    <TimePicker x:Name="pkToTime" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"/>
+                                    <Image Source="clock_outline.png" HorizontalOptions="End" WidthRequest="15" VerticalOptions="Center"/>
+                                </StackLayout>
+
+                            </Grid>
+
+                        </StackLayout>
+                        <!--<Label Text="Người tiếp nhận" Grid.Column="0" FontAttributes="Bold" TextColor="#676f7a" Grid.Row="0" FontSize="14"/>
+
+                        <Grid Margin="15,15,15,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="1"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+                            </Grid.RowDefinitions>
+
+                            <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"/>
+                            <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"/>
+
+                            <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"/>
+                            <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="2" Grid.Row="0" Grid.RowSpan="3"/>
+
+                            <Label x:Name="lbPeopleAssign" Text="Phan Khánh Hưng(CTO)" FontSize="14" TextColor="#676f7a" Grid.Column="1" Grid.Row="1" Margin="10,0,30,0"/>
+                        </Grid>-->
+
+                        <Label Grid.Column="0" FontAttributes="Bold" TextColor="#676f7a" Grid.Row="0" FontSize="14">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Nội dung "/>
+                                    <Span Text="*" ForegroundColor="Red" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Grid Margin="15,15,15,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="1"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+                            </Grid.RowDefinitions>
+
+                            <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"/>
+                            <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"/>
+
+                            <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"/>
+                            <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="2" Grid.Row="0" Grid.RowSpan="3"/>
+
+                            <Editor x:Name="edtCause" IsEnabled="False" BackgroundColor="White" HeightRequest="120" FontSize="14" TextColor="#676f7a" Grid.Column="1" Grid.Row="1" TextChanged="edtEdit"/>
+                        </Grid>
+
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End" Margin="0,0,0,20">
+                <Button x:Name="imgSend" Text="GỬI ĐƠN" IsEnabled="True" TextColor="White" FontAttributes="Bold" Font="20" BackgroundColor="#1aa8f4" HorizontalOptions="FillAndExpand" Clicked="SendRequest"/>
+                <Label x:Name="imgReset" Text="Làm lại đơn" TextColor="#676f7a" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center"/>
+                <BoxView HeightRequest="1" BackgroundColor="#676f7a" WidthRequest="80" HorizontalOptions="Center" Margin="0,-8,0,0"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

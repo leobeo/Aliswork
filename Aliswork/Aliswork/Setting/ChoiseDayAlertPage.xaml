@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Setting.ChoiseDayAlertPage"
+             Title="Cài đặt">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10,10,10,0" VerticalOptions="StartAndExpand">
+                <Label Text="VÀO CÁC NGÀY" FontAttributes="Bold" FontSize="16" TextColor="#676f7a"/>
+                <StackLayout BackgroundColor="White">
+
+                    <StackLayout x:Name="stkMon" Orientation="Horizontal" Padding="5,10,5,5" Margin="5,5,5,5">
+                        <Label Text="Thứ Hai" FontSize="14" TextColor="#676f7a" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Image x:Name="imgMon" Source="checked.png" HeightRequest="20" HorizontalOptions="End" IsVisible="False"/>
+                    </StackLayout>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+
+                    <StackLayout x:Name="stkTue" Orientation="Horizontal" Padding="5,5,5,5" Margin="5,5,5,5">
+                        <Label Text="Thứ Ba" FontSize="14" TextColor="#676f7a" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Image x:Name="imgTue" Source="checked.png" HeightRequest="20" HorizontalOptions="End" IsVisible="False"/>
+                    </StackLayout>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+
+                    <StackLayout x:Name="stkWed" Orientation="Horizontal" Padding="5,5,5,5" Margin="5,5,5,5">
+                        <Label Text="Thứ Tư" FontSize="14" TextColor="#676f7a" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Image x:Name="imgWed" Source="checked.png" HeightRequest="20" HorizontalOptions="End" IsVisible="False"/>
+                    </StackLayout>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+
+                    <StackLayout x:Name="stkThu" Orientation="Horizontal" Padding="5,5,5,5" Margin="5,5,5,5">
+                        <Label Text="Thứ Năm" FontSize="14" TextColor="#676f7a" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Image x:Name="imgThu" Source="checked.png" HeightRequest="20" HorizontalOptions="End" IsVisible="False"/>
+                    </StackLayout>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+
+                    <StackLayout x:Name="stkFri" Orientation="Horizontal" Padding="5,5,5,5" Margin="5,5,5,5">
+                        <Label Text="Thứ Sáu" FontSize="14" TextColor="#676f7a" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Image x:Name="imgFri" Source="checked.png" HeightRequest="20" HorizontalOptions="End" IsVisible="False"/>
+                    </StackLayout>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+
+                    <StackLayout x:Name="stkSat" Orientation="Horizontal" Padding="5,5,5,5" Margin="5,5,5,5">
+                        <Label Text="Thứ Bảy" FontSize="14" TextColor="#676f7a" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Image x:Name="imgSat" Source="checked.png" IsVisible="False" HeightRequest="20" HorizontalOptions="End"/>
+                    </StackLayout>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#F0EFF5"/>
+
+                    <StackLayout x:Name="stkSun" Orientation="Horizontal" Padding="5,5,5,10" Margin="5,5,5,5">
+                        <Label Text="Chủ Nhật" FontSize="14" TextColor="#676f7a" FontAttributes="Bold" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        <Image x:Name="imgSun" Source="checked.png" IsVisible="False" HeightRequest="20" HorizontalOptions="End"/>
+                    </StackLayout>
+
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

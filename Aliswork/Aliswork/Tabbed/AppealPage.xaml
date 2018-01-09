@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Tabbed.AppealPage"
+             NavigationPage.BackButtonTitle="">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout x:Name="stkHeader" Orientation="Horizontal" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand">
+                <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="20" WidthRequest="30" Margin="10,10,0,10" HorizontalOptions="Start"/>
+                <Label Text="Khiếu nại" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" TextColor="White"/>
+                <Image x:Name="imgtoNotification" Source="bell.png" HeightRequest="20" WidthRequest="30" Margin="10,10,0,10" HorizontalOptions="End"/>
+            </StackLayout>
+
+            <ScrollView>
+                <StackLayout Margin="10,10,10,0" VerticalOptions="StartAndExpand">
+                    <StackLayout BackgroundColor="White">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                            <Label Text="Khiếu nại đã gửi" TextColor="#676f7a" FontAttributes="Bold" FontSize="16" HorizontalOptions="StartAndExpand" Margin="10,0,0,0" VerticalOptions="Center"/>
+                            <StackLayout Margin="0,0,10,0" Orientation="Horizontal">
+                                <Picker x:Name="pickerYear" Title="Chọn năm" HorizontalOptions="EndAndExpand"/>
+                                <Image x:Name="imgYear" Source="arrow.png" Rotation="90" HorizontalOptions="End" HeightRequest="10" VerticalOptions="Center" Margin="-30,0,0,0"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Grid ColumnSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="48*"/>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="25*"/>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="27*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+                            </Grid.RowDefinitions>
+
+                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5"/>
+                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5"/>
+                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5"/>
+                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="5"/>
+
+                            <BoxView WidthRequest="1" BackgroundColor="#F0EFF5" Grid.Row="0" Grid.Column="1" Grid.RowSpan="7"/>
+                            <BoxView WidthRequest="1" BackgroundColor="#F0EFF5" Grid.Row="0" Grid.Column="3" Grid.RowSpan="7"/>
+
+                            <Label Text="Loại" Grid.Column="0" Grid.Row="1" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" TextColor="#676f7a" VerticalOptions="Center"/>
+                            <Label Text="Đã duyệt" Grid.Column="2" Grid.Row="1" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" TextColor="#2196F3" VerticalOptions="Center"/>
+                            <Label Text="Chưa duyệt" Grid.Column="4" Grid.Row="1" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" TextColor="#676f7a" VerticalOptions="Center"/>
+
+                            <Label Text="Về chấm công" HorizontalOptions="Center" Grid.Row="3" Grid.Column="0" FontSize="14" TextColor="#676f7a" VerticalOptions="Center"/>
+                            <Label x:Name="TimekeepingAccept_send" Text="2" HorizontalOptions="Center" Grid.Row="3" Grid.Column="2" FontSize="14" TextColor="#2196F3" VerticalOptions="Center"/>
+                            <Label x:Name="TimekeepingWait_send" Text="3" HorizontalOptions="Center" Grid.Row="3" Grid.Column="4" FontSize="14" TextColor="#676f7a" VerticalOptions="Center"/>
+
+                            <Label Text="Về tính lương" HorizontalOptions="Center" Grid.Row="5" Grid.Column="0" FontSize="14" TextColor="#676f7a" VerticalOptions="Center"/>
+                            <Label x:Name="PayrollAccept_send" Text="2" HorizontalOptions="Center" Grid.Row="5" Grid.Column="2" FontSize="14" TextColor="#2196F3" VerticalOptions="Center"/>
+                            <Label x:Name="PayrollWait_send" Text="0" HorizontalOptions="Center" Grid.Row="5" Grid.Column="4" FontSize="14" TextColor="#676f7a" VerticalOptions="Center"/>
+
+
+                        </Grid>
+                    </StackLayout>
+
+
+                    <StackLayout x:Name="stkAppealAssign" BackgroundColor="White" Margin="0,10,0,0">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                            <Label Text="Khiếu nại đã nhận" TextColor="#676f7a" FontAttributes="Bold" FontSize="16" HorizontalOptions="StartAndExpand" Margin="10,0,0,0" VerticalOptions="Center"/>
+                            <StackLayout Margin="0,0,10,0" Orientation="Horizontal">
+                                <Picker x:Name="pickerMonth" Title="Chọn tháng" HorizontalOptions="End"/>
+                                <Image x:Name="imgMonth" Source="arrow.png" Rotation="90" HorizontalOptions="End" WidthRequest="10" HeightRequest="10" VerticalOptions="Center" Margin="-30,0,0,0"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Grid ColumnSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="33*"/>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="20*"/>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="20*"/>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="27*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="1"/>
+
+                            </Grid.RowDefinitions>
+
+                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="7"/>
+                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="7"/>
+                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="7"/>
+                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="7"/>
+
+                            <BoxView WidthRequest="1" BackgroundColor="#F0EFF5" Grid.Row="0" Grid.Column="1" Grid.RowSpan="7"/>
+                            <BoxView WidthRequest="1" BackgroundColor="#F0EFF5" Grid.Row="0" Grid.Column="3" Grid.RowSpan="7"/>
+                            <BoxView WidthRequest="1" BackgroundColor="#F0EFF5" Grid.Row="0" Grid.Column="5" Grid.RowSpan="7"/>
+
+                            <Label Text="Loại" Grid.Column="0" Grid.Row="1" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" TextColor="#676f7a" VerticalOptions="Center"/>
+                            <Label Text="Đồng ý" Grid.Column="2" Grid.Row="1" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" TextColor="#2196F3" VerticalOptions="Center"/>
+                            <Label Text="Từ chối" Grid.Column="4" Grid.Row="1" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" TextColor="#ff7b2b" VerticalOptions="Center"/>
+                            <Label Text="Chưa duyệt" Grid.Column="6" Grid.Row="1" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" TextColor="#676f7a" VerticalOptions="Center"/>
+
+                            <Label Text="Về chấm công" HorizontalOptions="Center" Grid.Row="3" Grid.Column="0" FontSize="14" TextColor="#676f7a" VerticalOptions="Center"/>
+                            <Label x:Name="TimekeepingAccept_receive" Text="2" HorizontalOptions="Center" Grid.Row="3" Grid.Column="2" FontSize="14" TextColor="#2196F3" VerticalOptions="Center"/>
+                            <Label x:Name="TimekeepingDecline_receive" Text="2" HorizontalOptions="Center" Grid.Row="3" Grid.Column="4" FontSize="14" TextColor="#ff7b2b" VerticalOptions="Center"/>
+                            <Label  x:Name="TimekeepingWait_receive" Text="3" HorizontalOptions="Center" Grid.Row="3" Grid.Column="6" FontSize="14" TextColor="#676f7a" VerticalOptions="Center"/>
+
+                            <Label Text="Về tính lương" HorizontalOptions="Center" Grid.Row="5" Grid.Column="0" FontSize="14" TextColor="#676f7a" VerticalOptions="Center"/>
+                            <Label x:Name="PayrollAccept_receive" Text="1" HorizontalOptions="Center" Grid.Row="5" Grid.Column="2" FontSize="14" TextColor="#2196F3" VerticalOptions="Center"/>
+                            <Label x:Name="PayrollDecline_receive" Text="2" HorizontalOptions="Center" Grid.Row="5" Grid.Column="4" FontSize="14" TextColor="#ff7b2b" VerticalOptions="Center"/>
+                            <Label x:Name="PayrollWait_receive" Text="0" HorizontalOptions="Center" Grid.Row="5" Grid.Column="6" FontSize="14" TextColor="#676f7a" VerticalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Margin="0,10,0,0" Padding="0.5">
+                        <StackLayout x:Name="grdNewdAppeal" IsVisible="False">
+                            <Grid Padding="10,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="50"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="taodonmoi.png" WidthRequest="30" Grid.Column="0" Grid.Row="0"/>
+                                <Label Text="Tạo đơn mới" FontAttributes="Bold" FontSize="14" TextColor="#676f7a" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="0"/>
+                                <Image x:Name="imgToNewAppeal" Source="arrow.png" WidthRequest="20"  HeightRequest="20" Grid.Column="2" Grid.Row="0"/>
+                            </Grid>
+                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" HorizontalOptions="Fill"/>
+                        </StackLayout>
+
+                        <StackLayout x:Name="grdAppealAssign" Padding="10,5,10,5" Orientation="Horizontal">
+                            <Image Source="duyetdon.png" WidthRequest="30" Margin="10,0,10,0" HorizontalOptions="Start"/>
+                            <Label Text="Duyệt đơn đã nhận" FontAttributes="Bold" FontSize="14" TextColor="#676f7a" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                            <Image x:Name="imgToAssignAppeal" Source="arrow.png" WidthRequest="15"  HeightRequest="15" HorizontalOptions="End" Margin="0,0,10,0"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" HorizontalOptions="Fill"/>
+
+                        <StackLayout x:Name="grdAppealSend" Padding="10,5,10,5" Orientation="Horizontal">
+                            <Image Source="lichsudon.png" WidthRequest="30"  Margin="10,0,10,0" HorizontalOptions="Start"/>
+                            <Label Text="Lịch sử đơn đã gửi" FontAttributes="Bold" FontSize="14" TextColor="#676f7a" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+                            <Image x:Name="imgToRequestPage" Source="arrow.png" WidthRequest="15" HeightRequest="15" HorizontalOptions="End" Margin="0,0,10,0"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

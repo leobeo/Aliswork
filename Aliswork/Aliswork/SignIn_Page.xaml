@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.SignIn_Page"
+             Title="SignIn">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+
+            <StackLayout  Margin="15,80,15,0" VerticalOptions="FillAndExpand">
+
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Start" >
+                    <Image Source="logo.png" HorizontalOptions="Center" HeightRequest="180"/>
+                </StackLayout>
+
+                <StackLayout x:Name="stkLoad" IsVisible="False" HorizontalOptions="Center" VerticalOptions="Start">
+                    <ActivityIndicator Color="Blue" IsRunning="true" HeightRequest="50" WidthRequest="50"/>
+                </StackLayout>
+
+
+                <StackLayout x:Name="stkMain" VerticalOptions="StartAndExpand" IsVisible="True">
+
+                    <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="StartAndExpand" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="70*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="Entry_background.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+
+                        <Label Text="Username" FontSize="16" FontFamily="Lato" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0" Grid.Row="0"/>
+
+                        <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="0" Margin="20,5,20,5">
+                            <!--<Image Source="chamcong.png" WidthRequest="20"/>-->
+
+                            <Entry Placeholder="UserName"
+                               PlaceholderColor="Black"
+                               BackgroundColor="Transparent"
+                               Keyboard="Text"
+                               TextColor="#676f7a"
+                               x:Name="EntryUserName"
+                               HorizontalOptions="FillAndExpand"
+                               TextChanged="OnentUsernameChanged"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="StartAndExpand" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="70*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="Entry_background.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+
+                        <Label Text="Password" FontSize="16" FontFamily="Lato" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0" Grid.Row="0"/>
+
+                        <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="0" Margin="20,5,20,5">
+                            <!--<Image Source="locked.png" WidthRequest="20"/>-->
+                            <Entry Placeholder="Password"
+                               PlaceholderColor="#676f7a"
+                               BackgroundColor="Transparent"
+                               IsEnabled="False"
+                               IsPassword="true"
+                               TextColor="#676f7a"
+                               x:Name="EntryPassword"
+                               TextChanged="OnentPasswordChanged"
+                               HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </Grid>
+
+
+                    <Button x:Name="btnSignin"      
+                            HeightRequest="60"
+                            IsEnabled="False" 
+                            FontSize="25"
+                            BorderRadius="30"
+                            Text="Đăng nhập" 
+                            FontFamily="Lato"
+                            TextColor="White"
+                            BackgroundColor="#eb61ae" 
+                            HorizontalOptions="FillAndExpand"
+                            Margin="10,30,10,0"
+                            Clicked="SignInButtonClicked"/>
+                </StackLayout>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

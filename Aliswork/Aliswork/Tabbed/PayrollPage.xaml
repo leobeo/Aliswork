@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Tabbed.PayrollPage"  
+              NavigationPage.BackButtonTitle="">
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout x:Name="stkHeader" Orientation="Horizontal" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand">
+                <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="25" Margin="10,10,0,10" HorizontalOptions="Start"/>
+                <Label Text="Bảng lương" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" TextColor="White"/>
+                <Grid x:Name="grdNoti" RowSpacing="0" Margin="10,10,0,10" HorizontalOptions="End">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="19"/>
+                    </Grid.RowDefinitions>
+
+                    <Image x:Name="imgtoNotification" Source="bell.png" HeightRequest="25" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Label x:Name="lbcountNotiUnread" Text="99" TextColor="#ff0a0a" Grid.Row="1" Grid.Column="1" FontSize="18" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,0,1,0"/>
+
+                </Grid>
+            </StackLayout>
+
+
+            <StackLayout VerticalOptions="StartAndExpand" Margin="10,0,10,0">
+
+                <StackLayout BackgroundColor="White">
+                    <StackLayout Orientation="Horizontal" Padding="10,0,0,0" Margin="0,10,0,0">
+                        <Label Text="Kỳ lương" VerticalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#676f7a" FontSize="16" HorizontalOptions="StartAndExpand"/>
+                        <StackLayout Margin="0,0,10,0" Orientation="Horizontal">
+                            <Picker x:Name="pickerMonth" Title="Chọn tháng   " HorizontalOptions="EndAndExpand"/>
+                            <Image x:Name="imgMonth" Source="arrow.png" Rotation="90" HeightRequest="15" HorizontalOptions="End" VerticalOptions="Center" Margin="-30,0,0,0"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <BoxView HeightRequest="1" Margin="10,0,10,0" BackgroundColor="#F0EFF5"/>
+
+                    <StackLayout Orientation="Horizontal" Padding="10,5">
+                        <Label Text="Ngày nhận lương : " TextColor="#676f7a" HorizontalOptions="Start" FontSize="12"/>
+                        <Label x:Name="lbDateReceive" Text="04/04/2017" TextColor="#676f7a" HorizontalOptions="StartAndExpand" FontSize="12"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                    <Image Source="luong.png" VerticalOptions="End"/>
+                    <StackLayout Margin="0,-80,0,0" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Padding="10,0">
+                        <Label Text="Số tiền thực lĩnh" TextColor="#676f7a" HorizontalOptions="Center"  FontAttributes="Bold" FontSize="16"/>
+                        <Label x:Name="TotalMoney" Text="15.220.500 VNĐ" TextColor="#676f7a" HorizontalOptions="Center"  FontAttributes="Bold" FontSize="20"/>
+                    </StackLayout>
+                </StackLayout>
+
+
+                <StackLayout Margin="0,40">
+                    <ScrollView>
+                        <StackLayout>
+                            <StackLayout BackgroundColor="White" HorizontalOptions="FillAndExpand" Padding="10,10">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="tongkhoanthu.png" HorizontalOptions="Start" WidthRequest="30"/>
+                                    <Label Text="Tổng các khoản thu" TextColor="#676f7a" FontAttributes="Bold" VerticalOptions="Center" FontSize="14" HorizontalOptions="StartAndExpand" Margin="10,0,0,0"/>
+                                    <Image x:Name="imgCount" Source="arrow.png" Rotation="90" WidthRequest="15" Margin="0,0,10,0" HorizontalOptions="End"/>
+                                </StackLayout>
+                                <StackLayout x:Name="stkIncome" IsVisible="False"/>
+                            </StackLayout>
+
+                            <StackLayout BackgroundColor="White" Margin="0,3,0,0" HorizontalOptions="FillAndExpand" Padding="10,10">
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="baohiem.png" HorizontalOptions="Start" WidthRequest="30"/>
+                                    <Label Text="Bảo hiểm" TextColor="#676f7a" FontAttributes="Bold" VerticalOptions="Center" FontSize="14" HorizontalOptions="StartAndExpand" Margin="10,0,0,0"/>
+                                    <Image x:Name="imgProtect" Source="arrow.png" Rotation="90" WidthRequest="15" Margin="0,0,10,0" HorizontalOptions="End"/>
+                                </StackLayout>
+                                <StackLayout x:Name="stkInsurance" IsVisible="False"/>
+                            </StackLayout>
+
+                            <StackLayout BackgroundColor="White" Margin="0,3,0,0" HorizontalOptions="FillAndExpand" Padding="10,10">
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="khoantru.png" HorizontalOptions="Start" WidthRequest="30"/>
+                                    <Label Text="Các khoản giảm trừ" TextColor="#676f7a" FontAttributes="Bold" VerticalOptions="Center" FontSize="14" HorizontalOptions="StartAndExpand" Margin="10,0,0,0"/>
+                                    <Image x:Name="imgRemission" Source="arrow.png" Rotation="90" WidthRequest="15" Margin="0,0,10,0" HorizontalOptions="End"/>
+                                </StackLayout>
+                                <StackLayout x:Name="stkDeductions" IsVisible="False"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

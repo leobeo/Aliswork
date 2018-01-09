@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Timekeeping.WhoWorkingPage"
+              Title="Ai đang có mặt">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar x:Name="searchPeople" Placeholder="Search" TextColor="#676f7a" PlaceholderColor="#676f7a" HorizontalOptions="FillAndExpand" TextChanged="OnSearchBarTextChanged" SearchButtonPressed="OnSearchBarButtonPressed" FontSize="16"/>
+            <StackLayout Margin="10,0,10,0">
+
+                <StackLayout Padding="0,10">
+                    <Label x:Name="lbCountPeople" Text="0 người đang làm việc" FontAttributes="Bold" TextColor="#676f7a" FontSize="16" HorizontalOptions="Center" VerticalOptions="Start"/>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="StartAndExpand">
+                    <ScrollView>
+                        <ListView x:Name="lvSearch" RowHeight="50" IsPullToRefreshEnabled="true" Refreshing="OnRefresh" BackgroundColor="White">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                                <Image Source="{Binding IconSource}" WidthRequest="30" HeightRequest="30" HorizontalOptions="Start"/>
+                                                <StackLayout HorizontalOptions="StartAndExpand">
+                                                    <Label Text ="{Binding Name}" FontAttributes="Bold" FontSize="14" TextColor="{Binding TextColor}" VerticalOptions="Center"/>
+                                                    <Label Text="{Binding TimeIn}" FontSize="14" TextColor="#676f7a" VerticalOptions="Center"/>
+                                                </StackLayout>
+                                            </StackLayout>
+                                            <!--<BoxView BackgroundColor="Black" HeightRequest="1"/>-->
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </ScrollView>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Requests.ApproveRequestPage"
+             Title="Xác nhận quản lý">
+    <ContentPage.Content>
+        <StackLayout Margin="10,20,10,0">
+            <StackLayout VerticalOptions="CenterAndExpand" BackgroundColor="White">
+                <Label x:Name="lbAppealId" Text="Mã đơn yêu cầu" Grid.Column="0" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#676f7a" FontSize="24"/>
+                <Label Text="Lý do Đồng ý hoặc Từ chối đơn"  FontAttributes="Bold" TextColor="#676f7a" FontSize="16"/>
+
+                <Grid Margin="15,15,15,15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+
+                    <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"/>
+                    <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"/>
+
+                    <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"/>
+                    <BoxView BackgroundColor="#F0EFF5" WidthRequest="1" Grid.Column="2" Grid.Row="0" Grid.RowSpan="3"/>
+
+                    <Editor x:Name="edtCause" BackgroundColor="White" HeightRequest="120" FontSize="14" TextColor="#676f7a" Grid.Column="1" Grid.Row="1" TextChanged="edtChange"/>
+                </Grid>
+            </StackLayout>
+
+            <Button x:Name="btnSend" Text="GỬI" IsEnabled="False" TextColor="White" FontAttributes="Bold" Font="20" BackgroundColor="#1aa8f4" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Clicked="SendRequest"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

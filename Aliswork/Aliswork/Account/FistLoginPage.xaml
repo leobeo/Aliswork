@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Account.FistLoginPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" Margin="10,0,10,0">
+            <Image Source="fist_login.png" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,60,0,0" HeightRequest="180"/>
+
+            <Label Text="Chúc mừng bạn đã đăng nhập thành công lần đầu tiên!" TextColor="White" FontAttributes="Bold" FontSize="16" VerticalOptions="Start" HorizontalOptions="Center" Margin="20,20" XAlign="Center"/>
+
+            <Label Text="Mời bạn đổi mật khẩu" TextColor="White" FontAttributes="Bold" FontSize="16" VerticalOptions="Start" HorizontalOptions="Center"/>
+
+            <Button HeightRequest="60" FontSize="20" BorderRadius="30" Text="Đổi mật khẩu" TextColor="White" BackgroundColor="#eb61ae"  HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="10,30,10,0" Clicked="ChangedPassword"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Timekeeping.OneTimekeepingPage"
+             xmlns:control="clr-namespace:Aliswork.Timekeeping;assembly=Aliswork"
+             Title="Nghỉ - Đi muộn - Về sớm">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10,0,10,0" VerticalOptions="StartAndExpand">
+                <StackLayout  Margin="0,10,0,0">
+
+                    <StackLayout BackgroundColor="White" Margin="0,5,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="5,5">
+                            <Label Text="Số lần đi muộn: " FontSize="16" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="Start"/>
+                            <Label x:Name="lbLateCount" Text="05" FontSize="16" FontAttributes="Bold" TextColor="#61bafe" HorizontalOptions="StartAndExpand"/>
+                            <Label x:Name="lbTotalLateTime" Text="(Tổng: 60 phút)" FontSize="14" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="End" VerticalOptions="Center"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#A9A9A9"/>
+
+                        <StackLayout Orientation="Horizontal"  Padding="15,15">
+                            <Label Text="Số phút đi muộn" FontSize="12" WidthRequest="80" TextColor="#676f7a" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <control:CustomProgressBar  x:Name="progessLater" Progress="0.0" HeightRequest="10" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                            <Label x:Name="lbLateTimePer" Text="32/60p" FontSize="14" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="End" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+
+
+                    <StackLayout BackgroundColor="White" Margin="0,5,0,0">
+                        <StackLayout Orientation="Horizontal" Padding="5,5">
+                            <Label Text="Số lần về sớm: " FontSize="16" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="Start"/>
+                            <Label x:Name="lbEarlyCount" Text="05" FontSize="16" FontAttributes="Bold" TextColor="#61bafe" HorizontalOptions="StartAndExpand"/>
+                            <Label x:Name="lbTotalEarlyTime" Text="(Tổng: 60 phút)" FontSize="14" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="End" VerticalOptions="Center"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#A9A9A9"/>
+
+                        <StackLayout Orientation="Horizontal"  Padding="15,15">
+                            <Label Text="Số phút về sớm" FontSize="12" WidthRequest="80" TextColor="#676f7a" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <control:CustomProgressBar x:Name="progessEarly" Progress="0.0" HeightRequest="10" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                            <Label x:Name="lbTotalEarlyPer" Text="10/60p" FontSize="14" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="End" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White">
+                        <StackLayout Orientation="Horizontal" Padding="5,5">
+                            <Label Text="Số ngày nghỉ trong phép: " FontSize="16" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="Start"/>
+                            <Label x:Name="lbDateOffCount" Text="06" FontSize="16" FontAttributes="Bold" TextColor="#61bafe" HorizontalOptions="StartAndExpand"/>
+                            <Label x:Name="lbTotalDateOffCount" Text="(Tổng: 12 ngày)" FontSize="14" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="End" VerticalOptions="Center"/>
+                        </StackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="#A9A9A9"/>
+
+                        <StackLayout Orientation="Horizontal"  Padding="15,15">
+                            <Label Text="Nghỉ phép" FontSize="12"  WidthRequest="80" TextColor="#676f7a" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <control:CustomProgressBar x:Name="progessOff" Progress="0.0" HeightRequest="10" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                            <Label x:Name="lbDateOffPer" Text="6/12n" FontSize="14" FontAttributes="Bold" TextColor="#676f7a" HorizontalOptions="End" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <!--<BoxView HeightRequest="1" BackgroundColor="#A9A9A9"/>-->
+
+                    <StackLayout BackgroundColor="White" Margin="0,10,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10">
+                        <Label Text="Số ngày nghỉ ngoài phép: " TextColor="#676f7a" FontAttributes="Bold" FontSize="16" Margin="10,0,0,0" HorizontalOptions="Center"/>
+                        <Label x:Name="lbNoPaid" Text="0" TextColor="#61bafe" FontAttributes="Bold" FontSize="16" Margin="0,0,10,0" HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                    <StackLayout BackgroundColor="White" Margin="0,10,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10">
+                        <Label Text="Số ngày nghỉ hưởng lương khác: " TextColor="#676f7a" FontAttributes="Bold" FontSize="16" Margin="10,0,0,0" HorizontalOptions="Center"/>
+                        <Label x:Name="lbPaidLeave" Text="0" TextColor="#61bafe" FontAttributes="Bold" FontSize="16" Margin="0,0,10,0" HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

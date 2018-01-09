@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aliswork.Appeal.AppealAssignPage"
+             Title="Khiếu nại đã nhận">
+
+    <StackLayout>
+        <ScrollView VerticalOptions="FillAndExpand">
+            <ListView x:Name="lvSearch" IsPullToRefreshEnabled="true" ItemSelected="OnSelection" Refreshing="OnRefresh" RowHeight="60">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout x:Name="{Binding NumberId}" Orientation="Horizontal" VerticalOptions="StartAndExpand" BackgroundColor="White" Padding="5,5,5,5" Margin="10,5,10,0">
+                                    <Image Source="{Binding IconSource}" WidthRequest="50"/>
+                                    <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                                        <Label Text ="{Binding Name}" FontAttributes = "Bold" FontSize = "14" TextColor = "#676f7a"/>
+                                        <Label Text="{Binding TimePreview}" FontSize="14" TextColor="#676f7a"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
