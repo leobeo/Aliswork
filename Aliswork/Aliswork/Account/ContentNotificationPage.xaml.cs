@@ -18,11 +18,15 @@ namespace Aliswork.Account
         public ContentNotificationPage()
         {
             InitializeComponent();
+            PopUpDialog.ShowDialog();
             this.BackgroundColor = Color.FromHex("#F0EFF5");
         }
 
+        
         private async void ButtonGetGPS_Clicked(object sender, EventArgs e)
         {
+            PopUpDialog.IsVisible = false;
+            PopUpDialog.ShowDialog();
             try
             {
                 var hasPermission = await Utils.CheckPermissions(Permission.Location);

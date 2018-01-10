@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -43,7 +44,7 @@ namespace Aliswork.Requests
                     string strSub = "UpdateOdooRequest";
                     string appealId = Application.Current.Properties["NumberId"].ToString();
                     int state = (int)Application.Current.Properties["TypeApprove"];
-                    string conform_content = string.Format( edtCause.Text.ToString());
+                    string conform_content = Regex.Replace(edtCause.Text.ToString(), @"\s+", " ");
 
                     /*DateTime date = DateTime.Now;
                     var month = (int)date.Month;
@@ -58,6 +59,7 @@ namespace Aliswork.Requests
                     string strParam = @"{""uid"":""" + Application.Current.Properties["uId"].ToString() + @""",""request_id"":""" + appealId + @""",""action"":" + state + @",""comment"":""" + conform_content + @"""}";
 
                     Debug.WriteLine("strParam---------------------------------" + strParam);
+
                     var data = await ContentGlobal.FirebasePOSTFunctions(strSub, strParam);
 
                     if ((string)data["return"] == "OK")
@@ -73,7 +75,7 @@ namespace Aliswork.Requests
                 }
                 else
                 {
-                    await DisplayAlert("Warring", "Hay điền đủ lý do", "OK");
+                    await DisplayAlert("Warring", "Hay nhập xác nhận của bạn!", "OK");
                     edtCause.Text = "";
                     edtCause.Focus();
                 }

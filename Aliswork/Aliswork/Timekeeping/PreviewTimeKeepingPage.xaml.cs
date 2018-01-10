@@ -120,7 +120,7 @@ namespace Aliswork.Timekeeping
                 var dataEE_year = dataEE_timesheets_assign[year.ToString()];
                 if (dataEE_year != null)
                 {
-                    var dataEE = dataEE_year[(selectedIndexMonth + 1).ToString()];
+                    var dataEE = dataEE_year[(selectedIndexMonth + 1).ToString()+"_"+year.ToString()];
                     if (dataEE != null)
                     {
                         Debug.WriteLine("dataEE-----------------------" + year + "---------------" + month + "-------------" + dataEE);

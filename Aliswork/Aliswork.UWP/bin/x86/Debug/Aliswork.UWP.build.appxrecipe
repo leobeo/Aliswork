@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>d12ed1e0-0b9b-49b1-8953-caae0f55e419</PackageIdentityName>
     <PackageIdentityPublisher>CN=trinh</PackageIdentityPublisher>
-    <IntermediateOutputPath>E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\work\Aliswork\Aliswork\Aliswork.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>E:\work\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Aliswork.UWP.exe">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Aliswork.UWP.exe">
       <PackagePath>entrypoint\Aliswork.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trinh\.nuget\packages\microsoft.csharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -442,351 +442,351 @@
     <AppxPackagedFile Include="C:\Users\trinh\.nuget\packages\xamarin.forms\2.5.0.121934\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork\bin\Debug\Aliswork.dll">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork\bin\Debug\Aliswork.dll">
       <PackagePath>Aliswork.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork\bin\Debug\Aliswork.dll.config">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork\bin\Debug\Aliswork.dll.config">
       <PackagePath>Aliswork.dll.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\account.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\account.png">
       <PackagePath>account.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\all_icon.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\all_icon.png">
       <PackagePath>all_icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\arrow.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\arrow.png">
       <PackagePath>arrow.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\back.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\back.png">
       <PackagePath>back.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\bangluong.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bangluong.png">
       <PackagePath>bangluong.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\baohiem.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\baohiem.png">
       <PackagePath>baohiem.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\bell.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bell.png">
       <PackagePath>bell.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\caidat.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\caidat.png">
       <PackagePath>caidat.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\calamviec.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\calamviec.png">
       <PackagePath>calamviec.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\calendar.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\calendar.png">
       <PackagePath>calendar.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\canhan.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\canhan.png">
       <PackagePath>canhan.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\chamcong.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\chamcong.png">
       <PackagePath>chamcong.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\checked.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\checked.png">
       <PackagePath>checked.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\checkin.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\checkin.png">
       <PackagePath>checkin.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\checkout.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\checkout.png">
       <PackagePath>checkout.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\choduyet.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\choduyet.png">
       <PackagePath>choduyet.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\circle.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\circle.png">
       <PackagePath>circle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\circle_stop.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\circle_stop.png">
       <PackagePath>circle_stop.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\clock_outline.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\clock_outline.png">
       <PackagePath>clock_outline.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\congtac.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\congtac.png">
       <PackagePath>congtac.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\daduyet.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\daduyet.png">
       <PackagePath>daduyet.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Default%402x.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Default%402x.png">
       <PackagePath>Assets\Default%402x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Default-568h%402x.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Default-568h%402x.png">
       <PackagePath>Assets\Default-568h%402x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Default-Portrait%402x.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Default-Portrait%402x.png">
       <PackagePath>Assets\Default-Portrait%402x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Default-Portrait.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Default-Portrait.png">
       <PackagePath>Assets\Default-Portrait.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Default.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Default.png">
       <PackagePath>Assets\Default.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\doimatkhau.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\doimatkhau.png">
       <PackagePath>doimatkhau.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\dongbo.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\dongbo.png">
       <PackagePath>dongbo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\dontu.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\dontu.png">
       <PackagePath>dontu.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\duyetdon.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\duyetdon.png">
       <PackagePath>duyetdon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\email.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\email.png">
       <PackagePath>email.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Entry_background.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Entry_background.png">
       <PackagePath>Entry_background.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\eye.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\eye.png">
       <PackagePath>eye.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\eye_disabled.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\eye_disabled.png">
       <PackagePath>eye_disabled.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\fist_login.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\fist_login.png">
       <PackagePath>fist_login.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\guidon.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\guidon.png">
       <PackagePath>guidon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-60%402x.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-60%402x.png">
       <PackagePath>Assets\Icon-60%402x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-60%403x.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-60%403x.png">
       <PackagePath>Assets\Icon-60%403x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-76%402x.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-76%402x.png">
       <PackagePath>Assets\Icon-76%402x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-76.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-76.png">
       <PackagePath>Assets\Icon-76.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small%402x.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small%402x.png">
       <PackagePath>Assets\Icon-Small%402x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small%403x.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small%403x.png">
       <PackagePath>Assets\Icon-Small%403x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small-40%402x.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small-40%402x.png">
       <PackagePath>Assets\Icon-Small-40%402x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small-40%403x.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small-40%403x.png">
       <PackagePath>Assets\Icon-Small-40%403x.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small-40.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small-40.png">
       <PackagePath>Assets\Icon-Small-40.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Icon-Small.png">
       <PackagePath>Assets\Icon-Small.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\icon.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\icon.png">
       <PackagePath>icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\khieunai.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\khieunai.png">
       <PackagePath>khieunai.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\khoantru.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\khoantru.png">
       <PackagePath>khoantru.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\lichsudon.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\lichsudon.png">
       <PackagePath>lichsudon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\locked.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\locked.png">
       <PackagePath>locked.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\logo.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\logo.png">
       <PackagePath>logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\logout.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\logout.png">
       <PackagePath>logout.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\logo_icon.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\logo_icon.png">
       <PackagePath>Assets\logo_icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\luong.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\luong.png">
       <PackagePath>luong.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\nghiphep.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\nghiphep.png">
       <PackagePath>nghiphep.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\payroll.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\payroll.png">
       <PackagePath>payroll.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\pheduyet.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\pheduyet.png">
       <PackagePath>pheduyet.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\phienban.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\phienban.png">
       <PackagePath>phienban.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\phongban.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\phongban.png">
       <PackagePath>phongban.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\purchase.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\purchase.png">
       <PackagePath>purchase.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\quanly.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\quanly.png">
       <PackagePath>quanly.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\round.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\round.png">
       <PackagePath>round.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\round_stop.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\round_stop.png">
       <PackagePath>round_stop.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\taodonmoi.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\taodonmoi.png">
       <PackagePath>taodonmoi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\tongkhoanthu.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\tongkhoanthu.png">
       <PackagePath>tongkhoanthu.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\tuchoi.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\tuchoi.png">
       <PackagePath>tuchoi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\unlocked.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\unlocked.png">
       <PackagePath>unlocked.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\vangmat.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\vangmat.png">
       <PackagePath>vangmat.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\vaocacngay.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\vaocacngay.png">
       <PackagePath>vaocacngay.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\LockScreenLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\LockScreenLogo.scale-100.png">
       <PackagePath>Assets\LockScreenLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\LockScreenLogo.scale-125.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\LockScreenLogo.scale-125.png">
       <PackagePath>Assets\LockScreenLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\LockScreenLogo.scale-150.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\LockScreenLogo.scale-150.png">
       <PackagePath>Assets\LockScreenLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\LockScreenLogo.scale-400.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\LockScreenLogo.scale-400.png">
       <PackagePath>Assets\LockScreenLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\background.jpg">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\background.jpg">
       <PackagePath>background.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\YlQRwYM.jpg">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\YlQRwYM.jpg">
       <PackagePath>YlQRwYM.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Aliswork.UWP.xr.xml">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Aliswork.UWP.xr.xml">
       <PackagePath>Aliswork.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
@@ -795,11 +795,11 @@
     <AppxPackagedFile Include="C:\Users\trinh\.nuget\packages\xamarin.forms\2.5.0.121934\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Core\Aliswork.UWP.exe">
+    <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Core\Aliswork.UWP.exe">
       <PackagePath>Aliswork.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -170,7 +170,7 @@ namespace Aliswork.Tabbed
                 var dataEE_year = dataEE_payroll[year.ToString()];
                 if (dataEE_year != null)
                 {
-                    var dataEE = dataEE_year[(selectedIndexMonth + 1).ToString()];
+                    var dataEE = dataEE_year[(selectedIndexMonth + 1).ToString()+"_"+year.ToString()];
 
                     if (dataEE != null)
                     {

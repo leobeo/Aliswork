@@ -47,11 +47,23 @@ namespace Aliswork
                         {
                             ContentGlobal.loadListRequest();
 
-                            var registrationId = ContentGlobal.allldata["info"]["registrationId"];
-
-                            if (registrationId != null)
+                            if (ContentGlobal.registrationId.Length > 0)
                             {
-                                if (registrationId.ToString().Equals(ContentGlobal.registrationId) == false)
+                                var registrationId = ContentGlobal.allldata["info"]["registrationId"];
+
+                                if (registrationId != null)
+                                {
+                                    if (registrationId.ToString().Equals(ContentGlobal.registrationId) == false)
+                                    {
+                                        string strSubFirebase = "pushData";
+                                        string strParam = @"{""uid"" : """ + properties["uId"].ToString() + @""", ""registrationId"" :""" + ContentGlobal.registrationId + @""" }";
+
+                                        Debug.WriteLine("strParam-----------------------------------------------------" + strParam);
+
+                                        var rt = ContentGlobal.FirebasePOSTFunctions(strSubFirebase, strParam);
+                                    }
+                                }
+                                else
                                 {
                                     string strSubFirebase = "pushData";
                                     string strParam = @"{""uid"" : """ + properties["uId"].ToString() + @""", ""registrationId"" :""" + ContentGlobal.registrationId + @""" }";
@@ -61,18 +73,10 @@ namespace Aliswork
                                     var rt = ContentGlobal.FirebasePOSTFunctions(strSubFirebase, strParam);
                                 }
                             }
-                            else
-                            {
-                                string strSubFirebase = "pushData";
-                                string strParam = @"{""uid"" : """ + properties["uId"].ToString() + @""", ""registrationId"" :""" + ContentGlobal.registrationId + @""" }";
-
-                                Debug.WriteLine("strParam-----------------------------------------------------" + strParam);
-
-                                var rt = ContentGlobal.FirebasePOSTFunctions(strSubFirebase, strParam);
-                            }
 
                             if ((int)ContentGlobal.allldata["info"]["acted"] == 1)
                             {
+                                ContentGlobal.PeopleWorking = await ContentGlobal.peopleWorkingAsync();
                                 ContentGlobal.Userroot = true;
                             }
                             else
@@ -221,11 +225,23 @@ namespace Aliswork
                             }
                             else
                             {
-                                var registrationId = ContentGlobal.allldata["info"]["registrationId"];
-
-                                if (registrationId != null)
+                                if (ContentGlobal.registrationId.Length > 0)
                                 {
-                                    if (registrationId.ToString().Equals(ContentGlobal.registrationId) == false)
+                                    var registrationId = ContentGlobal.allldata["info"]["registrationId"];
+
+                                    if (registrationId != null)
+                                    {
+                                        if (registrationId.ToString().Equals(ContentGlobal.registrationId) == false)
+                                        {
+                                            strSubFirebase = "pushData";
+                                            strParam = @"{""uid"" : """ + Application.Current.Properties["uId"].ToString() + @""", ""registrationId"" :""" + ContentGlobal.registrationId + @""" }";
+
+                                            Debug.WriteLine("strParam-----------------------------------------------------" + strParam);
+
+                                            var rt = ContentGlobal.FirebasePOSTFunctions(strSubFirebase, strParam);
+                                        }
+                                    }
+                                    else
                                     {
                                         strSubFirebase = "pushData";
                                         strParam = @"{""uid"" : """ + Application.Current.Properties["uId"].ToString() + @""", ""registrationId"" :""" + ContentGlobal.registrationId + @""" }";
@@ -235,17 +251,6 @@ namespace Aliswork
                                         var rt = ContentGlobal.FirebasePOSTFunctions(strSubFirebase, strParam);
                                     }
                                 }
-                                else
-                                {
-                                    strSubFirebase = "pushData";
-                                    strParam = @"{""uid"" : """ + Application.Current.Properties["uId"].ToString() + @""", ""registrationId"" :""" + ContentGlobal.registrationId + @""" }";
-
-                                    Debug.WriteLine("strParam-----------------------------------------------------" + strParam);
-
-                                    var rt = ContentGlobal.FirebasePOSTFunctions(strSubFirebase, strParam);
-                                }
-
-
 
 
                                 if ((int)ContentGlobal.allldata["info"]["acted"] == 1)

@@ -11,8 +11,7 @@
 namespace Aliswork.Account {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\work\\alisa_app\\Aliswork\\Aliswork\\Aliswork\\Account\\ContentNotificationPage.xaml" +
-        "")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\work\\Aliswork\\Aliswork\\Aliswork\\Account\\ContentNotificationPage.xaml")]
     public partial class ContentNotificationPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -22,10 +21,14 @@ namespace Aliswork.Account {
         private global::Xamarin.Forms.Button ButtonGetGPS;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Aliswork.PopUpDialogView PopUpDialog;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ContentNotificationPage));
             lbData = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbData");
             ButtonGetGPS = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ButtonGetGPS");
+            PopUpDialog = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Aliswork.PopUpDialogView>(this, "PopUpDialog");
         }
     }
 }

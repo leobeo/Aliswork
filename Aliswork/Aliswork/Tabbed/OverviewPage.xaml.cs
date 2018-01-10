@@ -109,12 +109,17 @@ namespace Aliswork.Tabbed
                     var answer = await DisplayAlert("Checkin", "Bạn có muốn bắt đầu ca làm việc ngay lúc này!", "Yes", "No");
                     if (answer == true)
                     {
+                        PopUpDialog.ShowDialog();
+                        PopUpDialog.IsVisible = true;
+                        
                         try
                         {
                             var hasPermission = await Utils.CheckPermissions(Permission.Location);
                             if (!hasPermission)
                             {
                                 Debug.WriteLine("hasPermission---------------------------------------------");
+                                PopUpDialog.HideDialog();
+                                PopUpDialog.IsVisible = false;
                                 return;
                             }
 
@@ -122,6 +127,8 @@ namespace Aliswork.Tabbed
 
                             if (position == null)
                             {
+                                PopUpDialog.HideDialog();
+                                PopUpDialog.IsVisible = false;
                                 await DisplayAlert("Thông báo", "Không thể xác định vị trí lúc này, thử lại sau!", "OK");
                                 return;
                             }
@@ -147,6 +154,9 @@ namespace Aliswork.Tabbed
 
                                 OnAppearing();
 
+                                PopUpDialog.HideDialog();
+                                PopUpDialog.IsVisible = false;
+
                                 await DisplayAlert("Thông báo", "Bạn đã bắt đầu ca làm việc", "OK");
 
                                 /*boolAnimation = true;
@@ -155,12 +165,18 @@ namespace Aliswork.Tabbed
                             }
                             else
                             {
+                                PopUpDialog.HideDialog();
+                                PopUpDialog.IsVisible = false;
+
                                 await DisplayAlert("Thông báo", "Không thể thực hiện tác vụ này, xin thử lại sau!", "OK");
                             }
 
                         }
                         catch (Exception ex)
                         {
+                            PopUpDialog.HideDialog();
+                            PopUpDialog.IsVisible = false;
+
                             Debug.WriteLine("Error start Circle" + ex.ToString());
                             await DisplayAlert("Thông báo", "Có lỗi sảy ra, kiểm tra lại kết nối mạng hoặc cài đặt vị trí của bạn và thử lại sau !", "OK");
                         }
@@ -176,9 +192,15 @@ namespace Aliswork.Tabbed
                     {
                         try
                         {
+                            PopUpDialog.ShowDialog();
+                            PopUpDialog.IsVisible = true;
+
                             var hasPermission = await Utils.CheckPermissions(Permission.Location);
                             if (!hasPermission)
                             {
+                                PopUpDialog.HideDialog();
+                                PopUpDialog.IsVisible = false;
+
                                 Debug.WriteLine("hasPermission---------------------------------------------");
                                 return;
                             }
@@ -187,6 +209,9 @@ namespace Aliswork.Tabbed
 
                             if (position == null)
                             {
+                                PopUpDialog.HideDialog();
+                                PopUpDialog.IsVisible = false;
+
                                 await DisplayAlert("Thông báo", "Không thể xác định vị trí lúc này, thử lại sau!", "OK");
                                 return;
                             }
@@ -212,17 +237,26 @@ namespace Aliswork.Tabbed
 
                                 OnAppearing();
 
+                                PopUpDialog.HideDialog();
+                                PopUpDialog.IsVisible = false;
+
                                 await DisplayAlert("Thông báo", "Bạn đã kết thúc ca làm việc", "OK");
                                 /*ViewExtensions.CancelAnimations(imgRound);
                                 boolAnimation = false;*/
                             }
                             else
                             {
+                                PopUpDialog.HideDialog();
+                                PopUpDialog.IsVisible = false;
+
                                 await DisplayAlert("Thông báo", "Không thể thực hiện tác vụ này, xin thử lại sau!", "OK");
                             }
                         }
                         catch (Exception ex)
                         {
+                            PopUpDialog.HideDialog();
+                            PopUpDialog.IsVisible = false;
+
                             Debug.WriteLine("Error stop Circle" + ex.ToString());
                             await DisplayAlert("Thông báo", "Có lỗi sảy ra, kiểm tra lại kết nối mạng hoặc cài đặt vị trí của bạn và thử lại sau !", "OK");
                         }
@@ -243,6 +277,8 @@ namespace Aliswork.Tabbed
 
         protected async override void OnAppearing()
         {
+            PopUpDialog.IsVisible=false;
+
             stkHeader.IsVisible = true;
 
             Debug.WriteLine("Platform --------------------------------------------------------" + CrossDeviceInfo.Current.Platform);

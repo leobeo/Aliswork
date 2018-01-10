@@ -1,2 +1,2 @@
-E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Aliswork.UWP.csproj;x86
-E:\work\alisa_app\Aliswork\Aliswork\Aliswork\Aliswork.csproj;neutral
+E:\work\Aliswork\Aliswork\Aliswork.UWP\Aliswork.UWP.csproj;x86
+E:\work\Aliswork\Aliswork\Aliswork\Aliswork.csproj;neutral

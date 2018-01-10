@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Aliswork.Tabbed;assembly=Aliswork"
+             xmlns:views="clr-namespace:Aliswork;assembly=Aliswork"
              x:Class="Aliswork.Tabbed.OverviewPage"
              NavigationPage.BackButtonTitle="">
 
     <ContentPage.Content>
-
         <StackLayout x:Name="stkMain">
             <StackLayout x:Name="stkHeader" Orientation="Horizontal" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand">
                 <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="25" Margin="10,10,0,10" HorizontalOptions="Start"/>
@@ -26,124 +26,130 @@
                     <Label x:Name="lbcountNotiUnread" Text="99" TextColor="#ff0a0a" Grid.Row="1" Grid.Column="1" FontSize="18" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,0,1,0"/>
 
                 </Grid>
-                
-                
             </StackLayout>
+            <Grid>
+                <ScrollView>
+                    <StackLayout Margin="15,0,15,0" VerticalOptions="StartAndExpand">
 
-            <ScrollView>
-                <StackLayout Margin="15,0,15,0" VerticalOptions="StartAndExpand">
+                        <StackLayout BackgroundColor="White" Margin="0,10,0,0" HorizontalOptions="StartAndExpand">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Hôm nay" TextColor="#676f7a" FontAttributes="Bold" FontSize="16" HorizontalOptions="Start" Margin="10"/>
+                                <Label x:Name="lbDateOfToday" Text="Thứ tư(19/07/2017)"  TextColor="#676f7a" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                                <Image x:Name="toTotalFinger" Source="all_icon.png" HeightRequest="30" HorizontalOptions="End" Margin="0,0,10,0"/>
+                            </StackLayout>
 
-                    <StackLayout BackgroundColor="White" Margin="0,10,0,0" HorizontalOptions="StartAndExpand">
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="Hôm nay" TextColor="#676f7a" FontAttributes="Bold" FontSize="16" HorizontalOptions="Start" Margin="10"/>
-                            <Label x:Name="lbDateOfToday" Text="Thứ tư(19/07/2017)"  TextColor="#676f7a" FontSize="14" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
-                            <Image x:Name="toTotalFinger" Source="all_icon.png" HeightRequest="30" HorizontalOptions="End" Margin="0,0,10,0"/>
+                            <Grid Margin="0,0,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50*"/>
+                                    <ColumnDefinition Width="1"/>
+                                    <ColumnDefinition Width="50*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="1"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="1"/>
+                                </Grid.RowDefinitions>
+
+                                <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"/>
+                                <BoxView  HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3"/>
+                                <BoxView WidthRequest="1" BackgroundColor="#F0EFF5" Grid.Column="1" Grid.Row="0" Grid.RowSpan="6"/>
+                                <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"/>
+
+                                <Image x:Name="imgCircle" Source="circle_stop.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="7" Margin="5,10,5,10" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Image x:Name="imgRound" Source="round_stop.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="7" Margin="0,5,0,5" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                                <StackLayout x:Name="stkTimeIn" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" VerticalOptions="End">
+                                    <Label x:Name="lbTextTimeIn" Text="Giờ vào" FontSize="12"  HorizontalOptions="CenterAndExpand" Margin="0,0,0,-5" TextColor="#676f7a"/>
+                                    <Label x:Name="lbTimeIn" Text="00:00AM"  FontSize="12" HorizontalOptions="CenterAndExpand" TextColor="#676f7a"/>
+                                </StackLayout>
+                                <StackLayout x:Name="stkTimework" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" VerticalOptions="Start">
+                                    <Label Text="Hôm nay" TextColor="#676f7a"  FontSize="12" HorizontalOptions="CenterAndExpand"/>
+                                    <Label x:Name="lbTimework" Text="{Binding Time}" TextColor="#676f7a" FontSize="12" HorizontalOptions="CenterAndExpand" Margin="0,-5,0,0">
+                                        <Label.BindingContext>
+                                            <local:ClockViewModel />
+                                        </Label.BindingContext>
+                                    </Label>
+                                </StackLayout>
+
+                                <Label Text="Giờ bắt đầu" TextColor="#676f7a"  FontSize="14" Grid.Column="2" Grid.Row="1"/>
+                                <Label x:Name="lbTimeStart" Text="00:00" TextColor="#676f7a"  FontAttributes="Bold" FontSize="14" Grid.Column="2" Grid.Row="2"/>
+
+                                <Label Text="Giờ kết thúc" TextColor="#676f7a" FontSize="14"  Grid.Column="2" Grid.Row="4"/>
+                                <Label x:Name="lbTimeEnd" Text="00:00" TextColor="#676f7a"  FontAttributes="Bold" FontSize="14" Grid.Column="2" Grid.Row="5"/>
+
+                            </Grid>
+
+                            <StackLayout  x:Name="stkWorking" Orientation="Horizontal">
+                                <Label Text="Những người đang có mặt" TextColor="#676f7a"  FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand" Margin="10"/>
+                                <Image Source="arrow.png" HeightRequest="20" HorizontalOptions="End" Margin="0,0,10,0"/>
+                            </StackLayout>
                         </StackLayout>
 
-                        <Grid Margin="0,0,0,0">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="50*"/>
-                                <ColumnDefinition Width="1"/>
-                                <ColumnDefinition Width="50*"/>
-                            </Grid.ColumnDefinitions>
-
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="1"/>
-                                <RowDefinition Height="20"/>
-                                <RowDefinition Height="20"/>
-                                <RowDefinition Height="1"/>
-                                <RowDefinition Height="20"/>
-                                <RowDefinition Height="20"/>
-                                <RowDefinition Height="1"/>
-                            </Grid.RowDefinitions>
-
-                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"/>
-                            <BoxView  HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3"/>
-                            <BoxView WidthRequest="1" BackgroundColor="#F0EFF5" Grid.Column="1" Grid.Row="0" Grid.RowSpan="6"/>
-                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"/>
-
-                            <Image x:Name="imgCircle" Source="circle_stop.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="7" Margin="5,10,5,10" HorizontalOptions="Center" VerticalOptions="Center"/>
-                            <Image x:Name="imgRound" Source="round_stop.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="7" Margin="0,5,0,5" HorizontalOptions="Center" VerticalOptions="Center"/>
-
-                            <StackLayout x:Name="stkTimeIn" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" VerticalOptions="End">
-                                <Label x:Name="lbTextTimeIn" Text="Giờ vào" FontSize="12"  HorizontalOptions="CenterAndExpand" Margin="0,0,0,-5" TextColor="#676f7a"/>
-                                <Label x:Name="lbTimeIn" Text="00:00AM"  FontSize="12" HorizontalOptions="CenterAndExpand" TextColor="#676f7a"/>
-                            </StackLayout>
-                            <StackLayout x:Name="stkTimework" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" VerticalOptions="Start">
-                                <Label Text="Hôm nay" TextColor="#676f7a"  FontSize="12" HorizontalOptions="CenterAndExpand"/>
-                                <Label x:Name="lbTimework" Text="{Binding Time}" TextColor="#676f7a" FontSize="12" HorizontalOptions="CenterAndExpand" Margin="0,-5,0,0">
-                                    <Label.BindingContext>
-                                        <local:ClockViewModel />
-                                    </Label.BindingContext>
-                                </Label>
+                        <StackLayout BackgroundColor="White" Margin="0,10,0,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Label x:Name="DateTimekeeping" Text="Tháng 6/2017" TextColor="#676f7a"  FontAttributes="Bold" FontSize="16" HorizontalOptions="StartAndExpand" Margin="10"/>
+                                <Image x:Name="toOneFinger" Source="all_icon.png" HeightRequest="30" HorizontalOptions="End" Margin="0,0,10,0"/>
                             </StackLayout>
 
-                            <Label Text="Giờ bắt đầu" TextColor="#676f7a"  FontSize="14" Grid.Column="2" Grid.Row="1"/>
-                            <Label x:Name="lbTimeStart" Text="00:00" TextColor="#676f7a"  FontAttributes="Bold" FontSize="14" Grid.Column="2" Grid.Row="2"/>
+                            <Grid RowSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50*"/>
+                                    <ColumnDefinition Width="1"/>
+                                    <ColumnDefinition Width="25*"/>
+                                    <ColumnDefinition Width="1"/>
+                                    <ColumnDefinition Width="25*"/>
+                                </Grid.ColumnDefinitions>
 
-                            <Label Text="Giờ kết thúc" TextColor="#676f7a" FontSize="14"  Grid.Column="2" Grid.Row="4"/>
-                            <Label x:Name="lbTimeEnd" Text="00:00" TextColor="#676f7a"  FontAttributes="Bold" FontSize="14" Grid.Column="2" Grid.Row="5"/>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="1"/>
+                                </Grid.RowDefinitions>
 
-                        </Grid>
+                                <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5"/>
+                                <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="5"/>
 
-                        <StackLayout  x:Name="stkWorking" Orientation="Horizontal">
-                            <Label Text="Những người đang có mặt" TextColor="#676f7a"  FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand" Margin="10"/>
-                            <Image Source="arrow.png" HeightRequest="20" HorizontalOptions="End" Margin="0,0,10,0"/>
+                                <Label Text="Số ngày công thực tế" Grid.Column="0" Grid.Row="1" Margin="12,0,0,0" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
+                                <Label x:Name="manday_total" Text="19.0" Grid.Column="4" Grid.Row="1" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
+
+
+                                <BoxView BackgroundColor="#f7faff" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5"/>
+                                <Label Text="Số ngày nghỉ phép" Grid.Column="0" Grid.Row="2" Margin="12,0,0,0" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
+                                <Label x:Name="timeoff_total" Text="19.0" Grid.Column="4" Grid.Row="2" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
+
+                                <Label Text="Đi muộn" Grid.Column="0" Grid.Row="3" Margin="12,0,0,0" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
+                                <Label x:Name="late_count" Text="0 lần" Grid.Column="2" Grid.Row="3" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
+                                <Label x:Name="late_time" Text="00 phút" Grid.Column="4" Grid.Row="3" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
+
+                                <BoxView BackgroundColor="#f7faff" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5"/>
+                                <Label Text="Về sớm" Grid.Column="0" Grid.Row="4" Margin="12,0,0,0" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
+                                <Label x:Name="early_count" Text="0 lần" Grid.Column="2" Grid.Row="4" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
+                                <Label x:Name="early_time" Text="00 phút" Grid.Column="4" Grid.Row="4" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
+                            </Grid>
+
+                            <StackLayout x:Name="stkAccept" Orientation="Horizontal">
+                                <Label Text="Chốt phiếu chấm công" TextColor="#676f7a"  FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand" Margin="10"/>
+                                <Image Source="arrow.png" HeightRequest="20" HorizontalOptions="End" Margin="0,0,10,0"/>
+                            </StackLayout>
                         </StackLayout>
                     </StackLayout>
 
-                    <StackLayout BackgroundColor="White" Margin="0,10,0,0">
-                        <StackLayout Orientation="Horizontal">
-                            <Label x:Name="DateTimekeeping" Text="Tháng 6/2017" TextColor="#676f7a"  FontAttributes="Bold" FontSize="16" HorizontalOptions="StartAndExpand" Margin="10"/>
-                            <Image x:Name="toOneFinger" Source="all_icon.png" HeightRequest="30" HorizontalOptions="End" Margin="0,0,10,0"/>
-                        </StackLayout>
+                </ScrollView>
 
-                        <Grid RowSpacing="0">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="50*"/>
-                                <ColumnDefinition Width="1"/>
-                                <ColumnDefinition Width="25*"/>
-                                <ColumnDefinition Width="1"/>
-                                <ColumnDefinition Width="25*"/>
-                            </Grid.ColumnDefinitions>
-
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="1"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="1"/>
-                            </Grid.RowDefinitions>
-
-                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5"/>
-                            <BoxView HeightRequest="1" BackgroundColor="#F0EFF5" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="5"/>
-
-                            <Label Text="Số ngày công thực tế" Grid.Column="0" Grid.Row="1" Margin="12,0,0,0" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
-                            <Label x:Name="manday_total" Text="19.0" Grid.Column="4" Grid.Row="1" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
-
-
-                            <BoxView BackgroundColor="#f7faff" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5"/>
-                            <Label Text="Số ngày nghỉ phép" Grid.Column="0" Grid.Row="2" Margin="12,0,0,0" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
-                            <Label x:Name="timeoff_total" Text="19.0" Grid.Column="4" Grid.Row="2" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
-
-                            <Label Text="Đi muộn" Grid.Column="0" Grid.Row="3" Margin="12,0,0,0" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
-                            <Label x:Name="late_count" Text="0 lần" Grid.Column="2" Grid.Row="3" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
-                            <Label x:Name="late_time" Text="00 phút" Grid.Column="4" Grid.Row="3" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
-
-                            <BoxView BackgroundColor="#f7faff" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5"/>
-                            <Label Text="Về sớm" Grid.Column="0" Grid.Row="4" Margin="12,0,0,0" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
-                            <Label x:Name="early_count" Text="0 lần" Grid.Column="2" Grid.Row="4" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
-                            <Label x:Name="early_time" Text="00 phút" Grid.Column="4" Grid.Row="4" HorizontalOptions="Center" TextColor="#676f7a" FontSize="14" VerticalOptions="Center" />
-                        </Grid>
-
-                        <StackLayout x:Name="stkAccept" Orientation="Horizontal">
-                            <Label Text="Chốt phiếu chấm công" TextColor="#676f7a"  FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand" Margin="10"/>
-                            <Image Source="arrow.png" HeightRequest="20" HorizontalOptions="End" Margin="0,0,10,0"/>
-                        </StackLayout>
-                    </StackLayout>
-                </StackLayout>
-            </ScrollView>
+                <views:PopUpDialogView x:Name="PopUpDialog" HeaderTitle="Đang xử lý">
+                    <ActivityIndicator Color="Gray" IsRunning="true" HeightRequest="50" WidthRequest="50"/>
+                </views:PopUpDialogView>
+            </Grid>
         </StackLayout>
+        
+
     </ContentPage.Content>
 </ContentPage>

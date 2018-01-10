@@ -29,10 +29,11 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <MtouchProfiling>false</MtouchProfiling>
-    <IOSDebugOverWiFi>false</IOSDebugOverWiFi>
+    <IOSDebugOverWiFi>true</IOSDebugOverWiFi>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <CodesignProvision>iOS Team Provisioning Profile: alisa.fcm.aliswork</CodesignProvision>
+    <CodesignKey>iPhone Developer: Hung Phan Khanh (NHU9D3HE35)</CodesignKey>
+    <CodesignProvision>
+    </CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>

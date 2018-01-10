@@ -11,7 +11,7 @@
 namespace Aliswork.Tabbed {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\work\\alisa_app\\Aliswork\\Aliswork\\Aliswork\\Tabbed\\OverviewPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\work\\Aliswork\\Aliswork\\Aliswork\\Tabbed\\OverviewPage.xaml")]
     public partial class OverviewPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -96,6 +96,9 @@ namespace Aliswork.Tabbed {
         private global::Xamarin.Forms.StackLayout stkAccept;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Aliswork.PopUpDialogView PopUpDialog;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(OverviewPage));
             stkMain = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "stkMain");
@@ -125,6 +128,7 @@ namespace Aliswork.Tabbed {
             early_count = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "early_count");
             early_time = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "early_time");
             stkAccept = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "stkAccept");
+            PopUpDialog = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Aliswork.PopUpDialogView>(this, "PopUpDialog");
         }
     }
 }

@@ -2,13 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aliswork.Account.ContentNotificationPage"
+             xmlns:views="clr-namespace:Aliswork;assembly=Aliswork"
              Title="Chi tiết Thông báo">
     <ContentPage.Content>
-        <StackLayout Margin="10,20,10,0">
-            <StackLayout VerticalOptions="StartAndExpand" >
-                <Label x:Name="lbData"/>
-                <Button x:Name="ButtonGetGPS" Text="Get Current Location" Clicked="ButtonGetGPS_Clicked"/>
+        <Grid>
+            <StackLayout Margin="10,20,10,0" VerticalOptions="StartAndExpand">
+                <StackLayout VerticalOptions="StartAndExpand" >
+                    <Label x:Name="lbData"/>
+                    <Button x:Name="ButtonGetGPS" Text="Get Current Location" Clicked="ButtonGetGPS_Clicked"/>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
+
+            <views:PopUpDialogView x:Name="PopUpDialog" HeaderTitle="Test Dialog">
+                <Label Text="This is a content"></Label>
+                <ActivityIndicator Color="Blue" IsRunning="true" HeightRequest="50" WidthRequest="50"/>
+            </views:PopUpDialogView>
+        </Grid>
+        
     </ContentPage.Content>
 </ContentPage>

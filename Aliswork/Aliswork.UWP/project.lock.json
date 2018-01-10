@@ -29130,12 +29130,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "E:\\work\\alisa_app\\Aliswork\\Aliswork\\Aliswork.UWP\\Aliswork.UWP.csproj",
+      "projectUniqueName": "E:\\work\\Aliswork\\Aliswork\\Aliswork.UWP\\Aliswork.UWP.csproj",
       "projectName": "Aliswork.UWP",
-      "projectPath": "E:\\work\\alisa_app\\Aliswork\\Aliswork\\Aliswork.UWP\\Aliswork.UWP.csproj",
-      "projectJsonPath": "E:\\work\\alisa_app\\Aliswork\\Aliswork\\Aliswork.UWP\\project.json",
+      "projectPath": "E:\\work\\Aliswork\\Aliswork\\Aliswork.UWP\\Aliswork.UWP.csproj",
+      "projectJsonPath": "E:\\work\\Aliswork\\Aliswork\\Aliswork.UWP\\project.json",
       "packagesPath": "C:\\Users\\trinh\\.nuget\\packages\\",
-      "outputPath": "E:\\work\\alisa_app\\Aliswork\\Aliswork\\Aliswork.UWP\\obj\\",
+      "outputPath": "E:\\work\\Aliswork\\Aliswork\\Aliswork.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
@@ -29152,8 +29152,8 @@
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
-            "E:\\work\\alisa_app\\Aliswork\\Aliswork\\Aliswork\\Aliswork.csproj": {
-              "projectPath": "E:\\work\\alisa_app\\Aliswork\\Aliswork\\Aliswork\\Aliswork.csproj"
+            "E:\\work\\Aliswork\\Aliswork\\Aliswork\\Aliswork.csproj": {
+              "projectPath": "E:\\work\\Aliswork\\Aliswork\\Aliswork\\Aliswork.csproj"
             }
           }
         }
