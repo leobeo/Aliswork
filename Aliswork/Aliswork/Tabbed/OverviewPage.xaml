@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Aliswork.Tabbed;assembly=Aliswork"
@@ -7,7 +7,7 @@
              NavigationPage.BackButtonTitle="">
 
     <ContentPage.Content>
-        <StackLayout x:Name="stkMain">
+        <StackLayout x:Name="stkMain" BackgroundColor="#edf1f5">
             <!--<StackLayout x:Name="stkHeader" Orientation="Horizontal" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand">
                 <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="25" Margin="10,10,0,10" HorizontalOptions="Start"/>
                 <Label Text="Chấm công" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" TextColor="White"/>
@@ -44,7 +44,7 @@
                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}" 
                         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1,Constant=0}">
 
-                        <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="24" Margin="15,0,0,0" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="22" Margin="15,0,0,0" HorizontalOptions="Start" VerticalOptions="Center"/>
 
                         <Frame HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" HasShadow="false" CornerRadius="0" Opacity="0"/>
 
@@ -62,7 +62,7 @@
                                 <RowDefinition Height="19"/>
                             </Grid.RowDefinitions>
 
-                            <Image x:Name="imgtoNotification" Source="bell.png" HeightRequest="24" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            <Image x:Name="imgtoNotification" Source="bell.png" HeightRequest="22" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"/>
 
                             <Frame x:Name="frcountNotiUnread" BackgroundColor="Red" HeightRequest="20" WidthRequest="20" CornerRadius="10" Padding="0,0,0,0" Grid.Row="1" Grid.Column="1" HasShadow="false" Margin="0,0,4,0">
                                 <Label x:Name="lbcountNotiUnread" Text="99" TextColor="White"  FontSize="12" FontAttributes="Bold" HorizontalOptions="LayoutOptions.Center" VerticalOptions="LayoutOptions.Center" />
