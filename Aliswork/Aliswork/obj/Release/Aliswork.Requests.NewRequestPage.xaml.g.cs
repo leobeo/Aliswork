@@ -11,7 +11,7 @@
 namespace Aliswork.Requests {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\work\\alisa_app\\Aliswork\\Aliswork\\Aliswork\\Requests\\NewRequestPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\work\\Aliswork\\Aliswork\\Aliswork\\Requests\\NewRequestPage.xaml")]
     public partial class NewRequestPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

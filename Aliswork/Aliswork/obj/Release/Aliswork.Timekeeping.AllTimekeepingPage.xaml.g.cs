@@ -11,7 +11,7 @@
 namespace Aliswork.Timekeeping {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\work\\alisa_app\\Aliswork\\Aliswork\\Aliswork\\Timekeeping\\AllTimekeepingPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\work\\Aliswork\\Aliswork\\Aliswork\\Timekeeping\\AllTimekeepingPage.xaml")]
     public partial class AllTimekeepingPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

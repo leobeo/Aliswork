@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Aliswork;assembly=Aliswork"
              x:Class="Aliswork.SignIn_Page"
              Title="SignIn">
     <ContentPage.Content>
@@ -68,7 +69,7 @@
                     </Grid>
 
 
-                    <Button x:Name="btnSignin"      
+                   <!-- <Button x:Name="btnSignin"      
                             HeightRequest="60"
                             IsEnabled="False" 
                             FontSize="25"
@@ -79,7 +80,21 @@
                             BackgroundColor="#eb61ae" 
                             HorizontalOptions="FillAndExpand"
                             Margin="10,30,10,0"
+                            Clicked="SignInButtonClicked"/>-->
+
+                    <controls:BorderedButton x:Name="btnSignin"      
+                            HeightRequest="50"
+                            IsEnabled="False" 
+                            FontSize="25"
+                            BorderRadius="30"
+                            Text="Đăng nhập" 
+                            FontFamily="Lato"
+                            TextColor="White"
+                            BackgroundColor="#eb61ae" 
+                            HorizontalOptions="FillAndExpand"
+                            Margin="10,30,10,0"
                             Clicked="SignInButtonClicked"/>
+
                 </StackLayout>
 
             </StackLayout>

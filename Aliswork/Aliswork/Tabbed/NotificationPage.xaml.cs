@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Plugin.Badge;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -361,6 +362,7 @@ namespace Aliswork.Tabbed
 
             var month = (int)ContentGlobal.allldata["timeoff"]["period"];
             ContentGlobal.INTcountNotiUnread = ContentGlobal.CountNotiUnread("individualistic", month) + ContentGlobal.CountNotiUnread("public", month);
+            CrossBadge.Current.SetBadge(ContentGlobal.INTcountNotiUnread);
 
             if (saveNoti == true)
             {

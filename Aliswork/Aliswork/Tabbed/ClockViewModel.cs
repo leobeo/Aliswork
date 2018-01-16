@@ -55,7 +55,9 @@ namespace Aliswork.Tabbed
                                 {
                                     if ((TimeSpan)dataTimeKeeping["base_time_in"] >= (TimeSpan)dataTimeKeeping["time_in"])
                                     {
-                                        this.Time = (DateTime.Now.TimeOfDay - (TimeSpan)dataTimeKeeping["base_time_in"]).ToString(@"hh\:mm") + " phút";
+                                        //this.Time = (DateTime.Now.TimeOfDay - (TimeSpan)dataTimeKeeping["base_time_in"]).ToString(@"hh\:mm") + " phút";
+                                        this.Time = "00:00 phút";
+                                        Debug.WriteLine("don't time start shift");
                                     }
                                     else if ((TimeSpan)dataTimeKeeping["base_time_in"] < (TimeSpan)dataTimeKeeping["time_in"])
                                     {

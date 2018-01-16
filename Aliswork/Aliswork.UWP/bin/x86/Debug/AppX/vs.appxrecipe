@@ -31,13 +31,13 @@
     <AppXManifest Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-10T08:23:12.999</Modified>
+      <Modified>2018-01-11T03:50:31.666</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Aliswork.UWP.exe">
       <PackagePath>entrypoint\Aliswork.UWP.exe</PackagePath>
-      <Modified>2018-01-10T08:23:11.570</Modified>
+      <Modified>2018-01-11T03:50:30.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trinh\.nuget\packages\microsoft.csharp\4.3.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -593,7 +593,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork\bin\Debug\Aliswork.dll">
       <PackagePath>Aliswork.dll</PackagePath>
-      <Modified>2018-01-10T08:23:08.936</Modified>
+      <Modified>2018-01-11T03:50:27.986</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork\bin\Debug\Aliswork.dll.config">
       <PackagePath>Aliswork.dll.config</PackagePath>
@@ -1056,11 +1056,11 @@
     <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-01-10T03:46:50.605</Modified>
+      <Modified>2018-01-11T03:09:37.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\work\Aliswork\Aliswork\Aliswork.UWP\bin\x86\Debug\Core\Aliswork.UWP.exe">
       <PackagePath>Aliswork.UWP.exe</PackagePath>
-      <Modified>2018-01-10T08:23:12.996</Modified>
+      <Modified>2018-01-11T03:50:31.663</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

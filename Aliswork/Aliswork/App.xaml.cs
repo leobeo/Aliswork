@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Badge;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Aliswork
             InitializeComponent();
 
             //MainPage = new Account.ContentNotificationPage();
-           
+
             Debug.WriteLine("Patch-------------------" + ContentGlobal.path);
             if (ContentGlobal.path.ToString().Length > 0)
             {

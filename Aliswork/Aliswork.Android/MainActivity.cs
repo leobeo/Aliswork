@@ -10,7 +10,7 @@ using Gcm.Client;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using Aliswork;
-
+using Plugin.Badge;
 
 namespace Aliswork.Droid
 {
@@ -37,6 +37,8 @@ namespace Aliswork.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+
+            //CrossBadge.Current.SetBadge(ContentGlobal.INTcountNotiUnread);
 
             instance = this;
 

@@ -1,3 +1,0 @@
-Aliswork, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  Aliswork.MainPage.xaml
-  Aliswork.App.xaml

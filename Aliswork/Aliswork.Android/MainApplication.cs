@@ -3,6 +3,7 @@ using System;
 using Android.App;
 using Android.OS;
 using Android.Runtime;
+using Plugin.Badge;
 using Plugin.CurrentActivity;
 
 namespace Aliswork.Droid
@@ -36,6 +37,7 @@ namespace Aliswork.Droid
 
         public void OnActivityDestroyed(Activity activity)
         {
+            //CrossBadge.Current.SetBadge(ContentGlobal.INTcountNotiUnread);
         }
 
         public void OnActivityPaused(Activity activity)

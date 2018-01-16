@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Aliswork;
 
 using Foundation;
 using UIKit;
 using UserNotifications;
-using Aliswork;
+using Aliswork.iOS;
 
 using Firebase.CloudMessaging;
+using Plugin.Badge;
 
 namespace Aliswork.iOS
 {
@@ -37,7 +39,10 @@ namespace Aliswork.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
-            if(UIDevice.CurrentDevice.CheckSystemVersion(10,0))
+            //CrossBadge.Current.SetBadge(10);
+
+
+            if (UIDevice.CurrentDevice.CheckSystemVersion(10,0))
             {
                 var authOptions = UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound;
                 UNUserNotificationCenter.Current.RequestAuthorization(authOptions, (granted, error) =>
@@ -48,6 +53,9 @@ namespace Aliswork.iOS
 
                 // For iOS 10 display notification (sent via APNS)
                 UNUserNotificationCenter.Current.Delegate = this;
+
+                // For iOS 10 data message (sent via FCM)
+                //Messaging.SharedInstance.RemoteMessageDelegate = this;
             }
             else
             {

@@ -67,6 +67,31 @@ namespace Aliswork.Requests
             lbSubTypeRequest.Text = ContentGlobal.allldata["info"]["company_rules"]["list_request"][(string)dataEE["typeRequest"]]["sub_name"][(string)dataEE["subTypeRequest"]].ToString();
             lbNumberId.Text = Application.Current.Properties["NumberId"].ToString();
 
+            var time_type = ContentGlobal.allldata["info"]["company_rules"]["list_request"][(string)dataEE["typeRequest"]]["time_type"];
+            if (time_type != null)
+            {
+                if ((int)time_type == 0)
+                {
+                    stkFromDate.IsVisible = false; ;
+
+                    stkToDate.IsVisible = false;
+                }
+                else if ((int)time_type == 1)
+                {
+                    stkFromDate.IsVisible = true;
+                    lbTextFromDate.Text = "Ngày";
+
+                    stkToDate.IsVisible = false;
+                }
+                else if ((int)time_type == 2)
+                {
+                    stkFromDate.IsVisible = true;
+                    lbTextFromDate.Text = "Thời gian từ";
+
+                    stkToDate.IsVisible = true;
+                }
+            }
+
             lbStartDate.Text = dt_start_date.ToString("dd-MM-yyyy");
             lbStartTime.Text = dt_start_date.ToString("HH:mm");
 

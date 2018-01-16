@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <StackLayout x:Name="stkHeader" Orientation="Horizontal" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand">
+            <!--<StackLayout x:Name="stkHeader" Orientation="Horizontal" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand">
                 <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="25" Margin="10,10,0,10" HorizontalOptions="Start"/>
                 <Label Text="Bảng lương" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" TextColor="White"/>
                 <Grid x:Name="grdNoti" RowSpacing="0" Margin="10,10,0,10" HorizontalOptions="End">
@@ -22,11 +22,59 @@
                     </Grid.RowDefinitions>
 
                     <Image x:Name="imgtoNotification" Source="bell.png" HeightRequest="25" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"/>
-                    <Label x:Name="lbcountNotiUnread" Text="99" TextColor="#ff0a0a" Grid.Row="1" Grid.Column="1" FontSize="18" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,0,1,0"/>
+                    <Label x:Name="lbcountNotiUnread" Text="99" TextColor="#ff0a0a" Grid.Row="1" Grid.Column="1" FontSize="18" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,0,5,0"/>
 
                 </Grid>
-            </StackLayout>
+            </StackLayout>-->
 
+            <Frame x:Name="stkHeader" BackgroundColor="#2196F3" HeightRequest="54" Padding="0" Margin="-2,-3,-2,0" CornerRadius="0">
+
+                <RelativeLayout>
+                    <Label Text="Bảng lương" 
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}" 
+                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1,Constant=0}"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        FontAttributes="Bold"
+                        FontSize="20" 
+                        VerticalOptions="Center" 
+                        TextColor="White"/>
+
+                    <StackLayout Orientation="Horizontal"
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}" 
+                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1,Constant=0}">
+
+                        <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="24" Margin="15,0,0,0" HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                        <Frame HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" HasShadow="false" Opacity="0"/>
+
+                        <Grid x:Name="grdNoti"
+                            RowSpacing="0" 
+                            Margin="10,10,0,10">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="15"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="15"/>
+                                <RowDefinition Height="19"/>
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="imgtoNotification" Source="bell.png" HeightRequest="24" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                            <Frame x:Name="frcountNotiUnread" BackgroundColor="Red" HeightRequest="20" WidthRequest="20" CornerRadius="10" Padding="0,0,0,0" Grid.Row="1" Grid.Column="1" HasShadow="false" Margin="0,0,4,0">
+                                <Label x:Name="lbcountNotiUnread" Text="99" TextColor="White"  FontSize="12" FontAttributes="Bold" HorizontalOptions="LayoutOptions.Center" VerticalOptions="LayoutOptions.Center" />
+                            </Frame>
+
+                        </Grid>
+
+                    </StackLayout>
+
+                </RelativeLayout>
+
+            </Frame>
 
             <StackLayout VerticalOptions="StartAndExpand" Margin="10,0,10,0">
 
@@ -35,7 +83,7 @@
                         <Label Text="Kỳ lương" VerticalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="#676f7a" FontSize="16" HorizontalOptions="StartAndExpand"/>
                         <StackLayout Margin="0,0,10,0" Orientation="Horizontal">
                             <Picker x:Name="pickerMonth" Title="Chọn tháng   " HorizontalOptions="EndAndExpand"/>
-                            <Image x:Name="imgMonth" Source="arrow.png" Rotation="90" HeightRequest="15" HorizontalOptions="End" VerticalOptions="Center" Margin="-30,0,0,0"/>
+                            <Image x:Name="imgMonth" Source="arrow.png" Rotation="90" WidthRequest="15" HorizontalOptions="End" VerticalOptions="Center" Margin="-30,0,0,0"/>
                         </StackLayout>
                     </StackLayout>
 
@@ -63,7 +111,7 @@
                                 <StackLayout Orientation="Horizontal">
                                     <Image Source="tongkhoanthu.png" HorizontalOptions="Start" WidthRequest="30"/>
                                     <Label Text="Tổng các khoản thu" TextColor="#676f7a" FontAttributes="Bold" VerticalOptions="Center" FontSize="14" HorizontalOptions="StartAndExpand" Margin="10,0,0,0"/>
-                                    <Image x:Name="imgCount" Source="arrow.png" Rotation="90" WidthRequest="15" Margin="0,0,10,0" HorizontalOptions="End"/>
+                                    <Image x:Name="imgCount" Source="arrow.png" Rotation="90" HeightRequest="15" Margin="0,0,10,0" HorizontalOptions="End"/>
                                 </StackLayout>
                                 <StackLayout x:Name="stkIncome" IsVisible="False"/>
                             </StackLayout>
@@ -73,7 +121,7 @@
                                 <StackLayout Orientation="Horizontal">
                                     <Image Source="baohiem.png" HorizontalOptions="Start" WidthRequest="30"/>
                                     <Label Text="Bảo hiểm" TextColor="#676f7a" FontAttributes="Bold" VerticalOptions="Center" FontSize="14" HorizontalOptions="StartAndExpand" Margin="10,0,0,0"/>
-                                    <Image x:Name="imgProtect" Source="arrow.png" Rotation="90" WidthRequest="15" Margin="0,0,10,0" HorizontalOptions="End"/>
+                                    <Image x:Name="imgProtect" Source="arrow.png" Rotation="90" HeightRequest="15" Margin="0,0,10,0" HorizontalOptions="End"/>
                                 </StackLayout>
                                 <StackLayout x:Name="stkInsurance" IsVisible="False"/>
                             </StackLayout>
@@ -83,7 +131,7 @@
                                 <StackLayout Orientation="Horizontal">
                                     <Image Source="khoantru.png" HorizontalOptions="Start" WidthRequest="30"/>
                                     <Label Text="Các khoản giảm trừ" TextColor="#676f7a" FontAttributes="Bold" VerticalOptions="Center" FontSize="14" HorizontalOptions="StartAndExpand" Margin="10,0,0,0"/>
-                                    <Image x:Name="imgRemission" Source="arrow.png" Rotation="90" WidthRequest="15" Margin="0,0,10,0" HorizontalOptions="End"/>
+                                    <Image x:Name="imgRemission" Source="arrow.png" Rotation="90" HeightRequest="15" Margin="0,0,10,0" HorizontalOptions="End"/>
                                 </StackLayout>
                                 <StackLayout x:Name="stkDeductions" IsVisible="False"/>
                             </StackLayout>

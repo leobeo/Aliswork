@@ -112,7 +112,7 @@ namespace Aliswork.Timekeeping
                     }
                 }
             }
-
+            items = new ObservableCollection<LVTimekepping>(items.OrderBy(x => x.Day).ToList());
             return items;
         }
     }

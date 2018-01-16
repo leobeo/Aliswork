@@ -144,11 +144,12 @@ namespace Aliswork.Tabbed
 
             if (ContentGlobal.INTcountNotiUnread > 0)
             {
+                frcountNotiUnread.IsVisible = true;
                 lbcountNotiUnread.Text = ContentGlobal.INTcountNotiUnread.ToString();
             }
             else
             {
-                lbcountNotiUnread.IsVisible = false;
+                frcountNotiUnread.IsVisible = false;
             }
 
             stkDeductions.Children.Clear();

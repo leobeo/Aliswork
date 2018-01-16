@@ -18,7 +18,7 @@ using BottomNavigationBar.Listeners;
 using BottomNavigationBar;
 using Aliswork.Tabbed;
 
-[assembly: ExportRenderer(typeof(MainPage), typeof(MainPageRenderer))]
+//[assembly: ExportRenderer(typeof(MainPage), typeof(MainPageRenderer))]
 
 namespace Aliswork.Droid.Renderers
 {

@@ -1,2 +1,0 @@
-E:\work\alisa_app\Aliswork\Aliswork\Aliswork.UWP\Aliswork.UWP.csproj;x86
-E:\work\alisa_app\Aliswork\Aliswork\Aliswork\Aliswork.csproj;neutral

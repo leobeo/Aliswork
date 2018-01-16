@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Plugin.Badge;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -88,6 +89,8 @@ namespace Aliswork
 
                             ContentGlobal.INTcountNotiUnread = ContentGlobal.CountNotiUnread("individualistic", month) + ContentGlobal.CountNotiUnread("public", month);
                             Debug.WriteLine("INTcountNotiUnread--------------------------------------------------" + ContentGlobal.INTcountNotiUnread);
+
+                            CrossBadge.Current.SetBadge(ContentGlobal.INTcountNotiUnread);
 
                             var list_request = ContentGlobal.allldata["info"]["company_rules"]["list_request"];
 
@@ -276,6 +279,7 @@ namespace Aliswork
 
                                     ContentGlobal.INTcountNotiUnread = ContentGlobal.CountNotiUnread("individualistic", month) + ContentGlobal.CountNotiUnread("public", month);
                                     Debug.WriteLine("INTcountNotiUnread--------------------------------------------------" + ContentGlobal.INTcountNotiUnread);
+                                    CrossBadge.Current.SetBadge(ContentGlobal.INTcountNotiUnread);
 
                                     Device.StartTimer(TimeSpan.FromMinutes(5), () => {
 

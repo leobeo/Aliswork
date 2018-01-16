@@ -68,28 +68,34 @@ namespace Aliswork.Requests
             lbDateSend.Text = formattedDate;
             lbTypeRequest.Text = ContentGlobal.allldata["info"]["company_rules"]["list_request"][(string)dataEE["typeRequest"]]["name"].ToString();
             lbSubTypeRequest.Text = ContentGlobal.allldata["info"]["company_rules"]["list_request"][(string)dataEE["typeRequest"]]["sub_name"][(string)dataEE["subTypeRequest"]].ToString();
-            /*int time_type=(int)ContentGlobal.allldata["info"]["company_rules"]["list_request"][(string)dataEE["typeRequest"]]["time_type"];
-
-            if (time_type == 0)
+            var time_type=ContentGlobal.allldata["info"]["company_rules"]["list_request"][(string)dataEE["typeRequest"]]["time_type"];
+            if(time_type != null)
             {
-                stkFromDate.IsVisible = false;;
+                if ((int) time_type == 0)
+                {
+                    stkFromDate.IsVisible = false; ;
 
-                stkToDate.IsVisible = false;
+                    stkToDate.IsVisible = false;
+                }
+                else if ((int) time_type == 1)
+                {
+                    stkFromDate.IsVisible = true;
+                    lbTextFromDate.Text = "Ngày";
+
+                    stkToDate.IsVisible = false;
+                }
+                else if ((int) time_type == 2)
+                {
+                    stkFromDate.IsVisible = true;
+                    lbTextFromDate.Text = "Thời gian từ";
+
+                    stkToDate.IsVisible = true;
+                }
             }
-            else if (time_type == 1)
-            {
-                stkFromDate.IsVisible = true;
-                lbTextFromDate.Text = "Ngày";
+           
 
-                stkToDate.IsVisible = false;
-            }
-            else if (time_type == 2)
-            {
-                stkFromDate.IsVisible = true;
-                lbTextFromDate.Text = "Thời gian từ";
 
-                stkToDate.IsVisible = true;
-            }*/
+
             lbNumberId.Text = Application.Current.Properties["NumberId"].ToString();
             lbPeopleAssign.Text = (string)ContentGlobal.allldata["info"]["company_people"][(string)dataEE["people_assign"]]["name"];
 

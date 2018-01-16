@@ -164,6 +164,7 @@
     <Content Include="logo.png" />
     <Content Include="logout.png" />
     <Content Include="Assets\logo_icon.png" />
+    <Content Include="logo_icon.png" />
     <Content Include="luong.png" />
     <Content Include="nghiphep.png" />
     <Content Include="payroll.png" />

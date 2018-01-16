@@ -290,11 +290,12 @@ namespace Aliswork.Tabbed
 
             if (ContentGlobal.INTcountNotiUnread > 0)
             {
+                frcountNotiUnread.IsVisible = true;
                 lbcountNotiUnread.Text = ContentGlobal.INTcountNotiUnread.ToString();
             }
             else
             {
-                lbcountNotiUnread.IsVisible = false;
+                frcountNotiUnread.IsVisible = false;
             }
 
             var dataTimeOff = ContentGlobal.allldata["timeoff"];
@@ -366,7 +367,7 @@ namespace Aliswork.Tabbed
                                     imgRound.Source = "round_stop.png";
                                 }
                             }
-                            else if (DateTime.Now.TimeOfDay > (TimeSpan)dataTimeKeeping["base_time_out"])
+                           /* else if (DateTime.Now.TimeOfDay > (TimeSpan)dataTimeKeeping["base_time_out"])
                             {
                                 Debug.WriteLine("STOP by Time base out---------------------------------------------------------");
                                 ViewExtensions.CancelAnimations(imgRound);
@@ -375,14 +376,13 @@ namespace Aliswork.Tabbed
                                 lbTextTimeIn.TextColor = Color.White;
                                 lbTimeIn.TextColor = Color.White;
                                 imgRound.Source = "round_stop.png";
-                            }
+                            }*/
                             else
                             {
                                 Debug.WriteLine("Wait run");
-
-                                if (dt.TimeOfDay > (TimeSpan)dataTimeKeeping["time_in"] && dt.TimeOfDay < (TimeSpan)dataTimeKeeping["base_time_out"])
+                                if (dt.TimeOfDay > (TimeSpan)dataTimeKeeping["time_in"] /*&& dt.TimeOfDay < (TimeSpan)dataTimeKeeping["base_time_out"]*/ && dt.TimeOfDay > (TimeSpan)dataTimeKeeping["base_time_in"])
                                 {
-                                    Debug.WriteLine("RUN by RUN---------------------------------------------");
+                                    Debug.WriteLine("RUN by RUN timework---------------------------------------------");
                                     imgCircle.Source = "circle.png";
                                     lbTextTimeIn.TextColor = Color.White;
                                     lbTimeIn.TextColor = Color.White;
@@ -392,7 +392,15 @@ namespace Aliswork.Tabbed
                                     boolAnimation = true;
                                     int totalminute = 12 * 60;
                                     await imgRound.RotateTo(360 * totalminute, (uint)totalminute * 36000);
-                                    
+
+                                }
+                                else
+                                {
+                                    Debug.WriteLine("RUN by RUN time in---------------------------------------------");
+                                    imgCircle.Source = "circle.png";
+                                    imgRound.Source = "round.png";
+                                    lbTextTimeIn.TextColor = Color.White;
+                                    lbTimeIn.TextColor = Color.White;
                                 }
                             }
                         }
