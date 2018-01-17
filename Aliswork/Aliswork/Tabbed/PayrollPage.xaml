@@ -5,7 +5,7 @@
               NavigationPage.BackButtonTitle="">
 
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#edf1f5">
+        <StackLayout BackgroundColor="#edf1f5" Spacing="0">
 
             <!--<StackLayout x:Name="stkHeader" Orientation="Horizontal" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand">
                 <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="25" Margin="10,10,0,10" HorizontalOptions="Start"/>
@@ -91,7 +91,7 @@
 
                     <StackLayout Orientation="Horizontal" Padding="10,5">
                         <Label Text="Ngày nhận lương : " TextColor="#676f7a" HorizontalOptions="Start" FontSize="12"/>
-                        <Label x:Name="lbDateReceive" Text="04/04/2017" TextColor="#676f7a" HorizontalOptions="StartAndExpand" FontSize="12"/>
+                        <Label x:Name="lbDateReceive" TextColor="#676f7a" HorizontalOptions="StartAndExpand" FontSize="12"/>
                     </StackLayout>
                 </StackLayout>
 
@@ -99,7 +99,7 @@
                     <Image Source="luong.png" VerticalOptions="End"/>
                     <StackLayout Margin="0,-80,0,0" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Padding="10,0">
                         <Label Text="Số tiền thực lĩnh" TextColor="#676f7a" HorizontalOptions="Center"  FontAttributes="Bold" FontSize="16"/>
-                        <Label x:Name="TotalMoney" Text="15.220.500 VNĐ" TextColor="#676f7a" HorizontalOptions="Center"  FontAttributes="Bold" FontSize="20"/>
+                        <Label x:Name="TotalMoney" TextColor="#676f7a" HorizontalOptions="Center"  FontAttributes="Bold" FontSize="20"/>
                     </StackLayout>
                 </StackLayout>
 
@@ -139,7 +139,7 @@
                     </ScrollView>
                 </StackLayout>
             </StackLayout>
-
+            <BoxView BackgroundColor="#ECF1F0" HeightRequest="1" HorizontalOptions="Fill"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

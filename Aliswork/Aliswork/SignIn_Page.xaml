@@ -20,20 +20,21 @@
 
                 <StackLayout x:Name="stkMain" VerticalOptions="StartAndExpand" IsVisible="True">
 
-                    <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="StartAndExpand" Margin="0,10,0,0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="30*"/>
-                            <ColumnDefinition Width="70*"/>
-                        </Grid.ColumnDefinitions>
+                    <Frame BackgroundColor="White" CornerRadius="20" Padding="0,0,0,0" Grid.Row="1" Grid.Column="1" HasShadow="True" OutlineColor="#838080" Margin="0,10,0,0">
+                        <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="StartAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30*"/>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="70*"/>
+                            </Grid.ColumnDefinitions>
 
-                        <Image Source="Entry_background.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+                            <Label Text="Username" FontSize="16" FontFamily="Lato" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0" Grid.Row="0"/>
+                            <BoxView WidthRequest="1" Color="#838080" Grid.Row="0" Grid.Column="1"/>
 
-                        <Label Text="Username" FontSize="16" FontFamily="Lato" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0" Grid.Row="0"/>
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="0" Margin="20,5,20,5">
+                                <!--<Image Source="chamcong.png" WidthRequest="20"/>-->
 
-                        <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="0" Margin="20,5,20,5">
-                            <!--<Image Source="chamcong.png" WidthRequest="20"/>-->
-
-                            <Entry Placeholder="UserName"
+                                <Entry Placeholder="Tên đăng nhập"
                                PlaceholderColor="Black"
                                BackgroundColor="Transparent"
                                Keyboard="Text"
@@ -41,35 +42,40 @@
                                x:Name="EntryUserName"
                                HorizontalOptions="FillAndExpand"
                                TextChanged="OnentUsernameChanged"/>
-                        </StackLayout>
-                    </Grid>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
 
-                    <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="StartAndExpand" Margin="0,10,0,0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="30*"/>
-                            <ColumnDefinition Width="70*"/>
-                        </Grid.ColumnDefinitions>
+                    <Frame BackgroundColor="White" CornerRadius="20" Padding="0,0,0,0" Grid.Row="1" Grid.Column="1" HasShadow="True" OutlineColor="#838080" Margin="0,10,0,0">
+                        <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="StartAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30*"/>
+                                <ColumnDefinition Width="1"/>
+                                <ColumnDefinition Width="70*"/>
+                            </Grid.ColumnDefinitions>
 
-                        <Image Source="Entry_background.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+                            <!--<Image Source="Entry_background.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>-->
+                            <Label Text="Password" FontSize="16" FontFamily="Lato" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0" Grid.Row="0"/>
+                            <BoxView WidthRequest="1" Color="#838080" Grid.Row="0" Grid.Column="1"/>
 
-                        <Label Text="Password" FontSize="16" FontFamily="Lato" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0" Grid.Row="0"/>
+                            <StackLayout Orientation="Horizontal" Grid.Column="2" Grid.Row="0" Margin="20,5,20,5">
+                                <!--<Image Source="locked.png" WidthRequest="20"/>-->
+                                <Entry Placeholder="Mật khẩu" 
+                                       PlaceholderColor="#676f7a"
+                                       BackgroundColor="Transparent"
+                                       IsEnabled="False"
+                                       IsPassword="true"
+                                       TextColor="#676f7a"
+                                       x:Name="EntryPassword"
+                                       TextChanged="OnentPasswordChanged"
+                                       HorizontalOptions="FillAndExpand"
+                                       VerticalOptions="Center"/>
+                            </StackLayout>
 
-                        <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="0" Margin="20,5,20,5">
-                            <!--<Image Source="locked.png" WidthRequest="20"/>-->
-                            <Entry Placeholder="Password"
-                               PlaceholderColor="#676f7a"
-                               BackgroundColor="Transparent"
-                               IsEnabled="False"
-                               IsPassword="true"
-                               TextColor="#676f7a"
-                               x:Name="EntryPassword"
-                               TextChanged="OnentPasswordChanged"
-                               HorizontalOptions="FillAndExpand"/>
-                        </StackLayout>
-                    </Grid>
+                        </Grid>
+                    </Frame>
 
-
-                   <!-- <Button x:Name="btnSignin"      
+                    <!-- <Button x:Name="btnSignin"      
                             HeightRequest="60"
                             IsEnabled="False" 
                             FontSize="25"
@@ -84,13 +90,14 @@
 
                     <controls:BorderedButton x:Name="btnSignin"      
                             HeightRequest="50"
-                            IsEnabled="False" 
                             FontSize="25"
-                            BorderRadius="30"
+                            NormalTextColor="White"
+                            IsEnabled="False"
+                            BorderRadius="25"
                             Text="Đăng nhập" 
                             FontFamily="Lato"
                             TextColor="White"
-                            BackgroundColor="#eb61ae" 
+                            BackgroundColor="#838080" 
                             HorizontalOptions="FillAndExpand"
                             Margin="10,30,10,0"
                             Clicked="SignInButtonClicked"/>

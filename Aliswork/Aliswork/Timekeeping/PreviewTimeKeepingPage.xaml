@@ -30,7 +30,7 @@
                                     <Label Text="Nhân viên trước đó" TextColor="White" FontSize="12" VerticalOptions="Center"/>
                                 </StackLayout>
 
-                                <Label x:Name="NamePeople" Text="Lê Trọng Nghĩa" TextColor="#61bafe" FontAttributes="Bold" FontSize="16" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label x:Name="NamePeople"  TextColor="#61bafe" FontAttributes="Bold" FontSize="16" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center"/>
 
                                 <BoxView x:Name="bvNext" BackgroundColor="#61bafe" Grid.Column="2" Grid.Row="0"/>
 
@@ -45,49 +45,49 @@
 
                         <StackLayout Orientation="Horizontal" Padding="10,5,10,5">
                             <Label Text="Phòng ban" TextColor="#676f7a" FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand"/>
-                            <Label x:Name="Group" Text="Phòng IT " TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
+                            <Label x:Name="Group" TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
                         </StackLayout>
                         <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" />
 
                         <StackLayout Orientation="Horizontal" Padding="10,5,10,5">
                             <Label Text="Ngày tính công" TextColor="#676f7a" FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand"/>
-                            <Label x:Name="DateAccept" Text="25/06/2017" TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
+                            <Label x:Name="DateAccept" TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
                         </StackLayout>
                         <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" />
 
                         <StackLayout Orientation="Horizontal" Padding="10,5,10,5">
                             <Label Text="Ngày nghỉ phép tính lương" TextColor="#676f7a" FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand"/>
-                            <Label x:Name="DateOff" Text="03 ngày" TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
+                            <Label x:Name="DateOff" TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
                         </StackLayout>
                         <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" />
 
                         <StackLayout Orientation="Horizontal" Padding="10,5,10,5">
                             <Label Text="Ngày nghỉ chế độ" TextColor="#676f7a" FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand"/>
-                            <Label Text="3 ngày" TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
+                            <Label TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
                         </StackLayout>
                         <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" />
 
                         <StackLayout Orientation="Horizontal" Padding="10,5,10,5">
                             <Label Text="Đi muộn trừ công" TextColor="#676f7a" FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand"/>
-                            <Label x:Name="Late" Text="20 phút" TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
+                            <Label x:Name="Late" TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
                         </StackLayout>
                         <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" />
 
                         <StackLayout Orientation="Horizontal" Padding="10,5,10,5">
                             <Label Text="Về sớm trừ công" TextColor="#676f7a" FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand"/>
-                            <Label x:Name="Early" Text="20 phút" TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
+                            <Label x:Name="Early"  TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
                         </StackLayout>
                         <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" />
 
                         <StackLayout Orientation="Horizontal" Padding="10,5,10,5">
                             <Label Text="Quên chấm công" TextColor="#676f7a" FontAttributes="Bold" FontSize="14" HorizontalOptions="StartAndExpand"/>
-                            <Label x:Name="Forget_keeping" Text="20 phút" TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
+                            <Label x:Name="Forget_keeping"  TextColor="#676f7a" FontSize="14" HorizontalOptions="End"/>
                         </StackLayout>
                         <BoxView BackgroundColor="#F0EFF5" HeightRequest="1" />
 
                         <StackLayout BackgroundColor="White" Margin="0,10,0,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Padding="10">
                             <Label Text="Ngày công tính lương " TextColor="#676f7a" FontAttributes="Bold" FontSize="16" Margin="10,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
-                            <Label x:Name="ManDay" Text="17" TextColor="#61bafe" FontAttributes="Bold" FontSize="16" Margin="0,0,10,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                            <Label x:Name="ManDay" TextColor="#61bafe" FontAttributes="Bold" FontSize="16" Margin="0,0,10,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
                         </StackLayout>
 
                     </StackLayout>

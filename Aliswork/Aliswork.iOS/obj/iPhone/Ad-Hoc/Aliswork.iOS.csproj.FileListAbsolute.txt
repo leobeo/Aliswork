@@ -181,3 +181,4 @@ E:\work\Aliswork\Aliswork\Aliswork.iOS\obj\iPhone\Ad-Hoc\XbdMerge\Firebase.Analy
 E:\work\Aliswork\Aliswork\Aliswork.iOS\obj\iPhone\Ad-Hoc\XbdMerge\Firebase.CloudMessaging.dll.stamp
 E:\work\Aliswork\Aliswork\Aliswork.iOS\obj\iPhone\Ad-Hoc\Aliswork.iOS.csproj.CoreCompileInputs.cache
 E:\work\Aliswork\Aliswork\Aliswork.iOS\obj\iPhone\Ad-Hoc\Aliswork.iOS.exe
+E:\work\Aliswork\Aliswork\Aliswork.iOS\bin\iPhone\Ad-Hoc\Aliswork.dll.mdb

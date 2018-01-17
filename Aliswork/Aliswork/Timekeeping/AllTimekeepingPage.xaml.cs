@@ -15,7 +15,7 @@ namespace Aliswork.Timekeeping
 {
     public class LVTimekepping
     {
-        public string Day { set; get; }
+        public int Day { set; get; }
         public string TimeIn { set; get; }
         public string TimeOut { set; get; }
         public string ShiftName { set; get; }
@@ -99,10 +99,10 @@ namespace Aliswork.Timekeeping
                             }
 
                             string Shiftname = (string)kv.Value["shiftname"];
-
+                            var subday = kv.Key.Split('_')[0];
                             items.Add(new LVTimekepping()
                             {
-                                Day = kv.Key.Split('_')[0],
+                                Day = int.Parse(subday),
                                 TimeIn = Time_in,
                                 TimeOut = Time_out,
                                 ShiftName = Shiftname,

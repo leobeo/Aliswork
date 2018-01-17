@@ -20,7 +20,7 @@ namespace Aliswork
         {
             InitializeComponent();
             //this.BackgroundImage = "background.jpg";
-            this.BackgroundColor = Color.FromHex("#61bafe");
+            this.BackgroundColor = Color.FromHex("#edf1f5");
             EntryUserName.Focus();
         }
 

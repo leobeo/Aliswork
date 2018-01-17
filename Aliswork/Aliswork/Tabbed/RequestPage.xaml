@@ -4,7 +4,7 @@
              x:Class="Aliswork.Tabbed.RequestPage"
              NavigationPage.BackButtonTitle="">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#edf1f5">
+        <StackLayout BackgroundColor="#edf1f5" Spacing="0">
             <!--<StackLayout x:Name="stkHeader" Orientation="Horizontal" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand">
                 <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="25" Margin="10,10,0,10" HorizontalOptions="Start"/>
                 <Label Text="Đơn từ" HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" FontSize="20" VerticalOptions="Center" TextColor="White"/>
@@ -74,7 +74,7 @@
 
             </Frame>
 
-            <ScrollView>
+            <ScrollView Margin="0,0,0,10">
                 
                 <StackLayout Margin="10,10,10,0" VerticalOptions="StartAndExpand">
 
@@ -270,6 +270,7 @@
                     </StackLayout>
                 </StackLayout>
             </ScrollView>
+            <BoxView BackgroundColor="#ECF1F0" HeightRequest="1" HorizontalOptions="Fill"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

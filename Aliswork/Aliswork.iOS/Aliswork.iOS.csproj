@@ -132,6 +132,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\CustomPickerRender.cs" />
     <Compile Include="Renderers\CustomProgressBarRenderer.cs" />
     <Compile Include="ViewController.cs" />
     <None Include="Entitlements.plist" />

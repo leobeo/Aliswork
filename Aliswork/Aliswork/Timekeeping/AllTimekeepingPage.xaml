@@ -44,8 +44,8 @@
                 <BoxView WidthRequest="1" BackgroundColor="#F0EFF5" Grid.Column="5" Grid.Row="0" Grid.RowSpan="3"/>
                 <Label Text="Ca làm việc" FontSize="14" FontAttributes="Bold" TextColor="#676f7a" Grid.Column="6" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center"/>
             </Grid>
-            <ScrollView VerticalOptions="FillAndExpand">
-                <StackLayout>
+            <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     <ListView x:Name="lvTimekeeping" RowHeight="40">
                         <ListView.ItemTemplate>
                             <DataTemplate>

@@ -331,3 +331,4 @@ E:\work\Aliswork\Aliswork\Aliswork\obj\Release\Aliswork.Account.ContentNotificat
 E:\work\Aliswork\Aliswork\Aliswork\obj\Release\Aliswork.PopUpDialogView.xaml.g.cs
 E:\work\Aliswork\Aliswork\Aliswork\obj\Release\Aliswork.dll
 E:\work\Aliswork\Aliswork\Aliswork\obj\Release\Aliswork.pdb
+E:\work\Aliswork\Aliswork\Aliswork\obj\Release\Aliswork.csprojResolveAssemblyReference.cache

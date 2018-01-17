@@ -162,7 +162,7 @@ namespace Aliswork.Droid.Renderers
 
             PopulateBottomBarItems(bar, pageIntents);
 
-            bar.ItemContainer.SetBackgroundColor(Color.LightGray);
+            //bar.ItemContainer.SetBackgroundColor( "#fcfdff");
 
             return bar;
         }

@@ -7,7 +7,7 @@
              NavigationPage.BackButtonTitle="">
 
     <ContentPage.Content>
-        <StackLayout x:Name="stkMain" BackgroundColor="#edf1f5">
+        <StackLayout x:Name="stkMain" BackgroundColor="#edf1f5" Spacing="0">
             <!--<StackLayout x:Name="stkHeader" Orientation="Horizontal" BackgroundColor="#2196F3" HorizontalOptions="FillAndExpand">
                 <Image x:Name="imgtoPersion" Source="account.png" HeightRequest="25" Margin="10,10,0,10" HorizontalOptions="Start"/>
                 <Label Text="Chấm công" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" TextColor="White"/>
@@ -77,8 +77,8 @@
             </Frame>
 
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <ScrollView>
-                    <StackLayout Margin="15,0,15,0" VerticalOptions="StartAndExpand">
+                <ScrollView >
+                    <StackLayout Margin="15,0,15,10" VerticalOptions="StartAndExpand">
 
                         <StackLayout BackgroundColor="White" Margin="0,10,0,0" HorizontalOptions="StartAndExpand">
                             <StackLayout Orientation="Horizontal">
@@ -197,6 +197,8 @@
                     <ActivityIndicator Color="Gray" IsRunning="true" HeightRequest="50" WidthRequest="50"/>
                 </views:PopUpDialogView>
             </Grid>
+
+            <BoxView BackgroundColor="#ECF1F0" HeightRequest="1" HorizontalOptions="Fill"/>
         </StackLayout>
         
 
